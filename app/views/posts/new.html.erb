@@ -5,24 +5,28 @@
         <%# 部分テンプレートでフォームを表示する %>
 
         <%= form_with model:@post, local: true do |f|%>
+        <%= render 'error', model: f.object %>
+
+
         <div class="field">
-          <%= f.label :hoge, "プロトタイプの名称" %><br />
-          <%= f.text_field :hoge %>
+          ジャンル 
+          <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box"}) %>
         </div>
 
         <div class="field">
-       <%= f.label :hoge, "キャッチコピー" %><br />
-       <%= f.text_area :hoge, class: :form__text %>
+         <%= f.label :image, "写真で一言" %><br />
+         <%= f.file_field :image %>
+       </div>
+
+       
+       <div class="field">
+         <%= f.label :title, "お題" %><br />
+         <%= f.text_area :title, class: :form__text, placeholder:"50字以内でお答えください"%>
        </div>
 
        <div class="field">
-         <%= f.label :hoge, "コンセプト" %><br />
-         <%= f.text_area :hoge, class: :form__text %>
-       </div>
-
-       <div class="field">
-         <%= f.label :hoge, "プロトタイプの画像" %><br />
-         <%= f.file_field :hoge %>
+         <%= f.label :sentence, "投稿者の回答" %><br />
+         <%= f.text_area :sentence, class: :form__text, placeholder:"50字以内でお答えください" %>
        </div>
 
        <div class="actions">

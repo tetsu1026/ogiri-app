@@ -51,8 +51,12 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.nav__left {
+  color: #FFFF66;
+}
 .logo {
-  width: 200px;
+  width: 30px;
 }
 .nav__btn{
   display: inline-block;
@@ -118,8 +122,13 @@ a {
   cursor: pointer;
 }
 
-/* メイン */
+.select-box {
+  margin-bottom: 10px;
+  width: 100px;
+  display: block;
+}
 
+/* メイン */
 .greeting{
   margin-bottom: 20px;
 }
@@ -142,62 +151,96 @@ a {
   margin-bottom: 40px;
 }
 .card__img {
-  margin-bottom: 16px;
+  margin: auto;
 }
-.card__title {
-  display: block;
-  font-size: 20px;
+
+.main_image {
+  display: flex;
+}
+
+.main__title {
   margin-bottom: 8px;
   font-weight: bold;
+  font-size: 25px;
+  color: #CCCC00;
+  display: block;
+  background-color: black;
+  margin-top: 10px;
+  text-align: center;
 }
-.card__summary {
-  font-size: 16px;
-}
+
 .card__user {
   display: block;
   font-size: 12px;
   color: #999;
+  text-align: left;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.answer_title{
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
   text-align: right;
   text-decoration: underline;
+  background-color: black;
+  color: #CCCC00;
+}
+
+.answer_title:hover{
+  color: #800000;
+}
+
+.box {
+  border: 1px black;
+}
+
+.genre {
+  font-size: 15px;
+  background-color: black;
+  color: #CCCC00;
+  text-align: center;
 }
 
 /* 詳細ページ */
-.prototype__wrapper{
+.post__wrapper{
   min-height: calc(100vh - 161px);
 }
-.prototype__hedding{
-  font-size: 24px;
+.post__title{
+  font-size: 60px;
   font-weight: bold;
   text-align: center;
+  background-color: black;
+  color: #CCCC00;
 }
-.prototype__user{
+.post__user{
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   color: #999;
-  text-align: center;
+  text-align: left;
   text-decoration: underline;
+  font-weight: bold;
+  margin-top: 10px;
 }
-.prototype__image{
+.post__image{
   width: 40%;
   margin: 0 auto;
   padding: 16px 0;
 }
-.prototype__detail{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 8px;
+
+.post__sentence{
+  text-align: center;
+  font-size: 25px;
 }
-.detail__title{
-  font-size: 20px;
-  font-weight: bold;
-}
-.prototype__manage{
+
+.post__manage{
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
-.prototype__btn{
+.post__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
@@ -209,12 +252,12 @@ a {
   transition: 0.4s ease;
   margin: 0 4px;
 }
-.prototype__btn:hover{
+.post__btn:hover{
   color: #fff;
   background: #999;
 }
 
-.prototype__comments{
+.post__comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
