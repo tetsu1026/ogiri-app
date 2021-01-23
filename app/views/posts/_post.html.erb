@@ -10,7 +10,7 @@
       <%= post.title %>
     </div>
     <%= link_to " #{post.user.nickname}さんの回答", root_path, class: :card__user %>
-    <div class= "box">
+    <div class= "main__sentence">
       <%= post.sentence %>
     </div>
     <%=link_to 'お題に挑戦する', post_path(post.id), class: :answer_title %>

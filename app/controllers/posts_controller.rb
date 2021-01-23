@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :set_post, only: [:show, :edit, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
   
   def index
     @post = Post.includes(:user).order("created_at DESC")
@@ -18,12 +20,33 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+  end
+
+  def edit
+  end
+
+  def update
+    if @post.update(post_params)
+      redirect_to post_path
+    else
+      render :edit
+    end
+  end
+
+
+  def destroy
+    if @post.destroy
+      redirect_to root_path
+    end
   end
 
   private
 
   def post_params
     params.require(:post).permit(:title, :genre_id, :sentence, :image).merge(user_id: current_user.id)
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
   end
 end

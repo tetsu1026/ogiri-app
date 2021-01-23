@@ -1,6 +1,15 @@
 <main class="main">
   <div class="inner">
     <div class="post__wrapper">
+      <div class="show__genre">
+        <%= @post.genre.name %>
+      </div>
+      <% if user_signed_in? && current_user.id == @post.user_id %>
+        <div class="post__manage">
+          <%= link_to "編集する", edit_post_path(@post.id), class: :post__btn %>
+          <%= link_to "削除する", post_path(@post.id), method: :delete, class: :post__btn %>
+        </div>
+      <% end %>
       <div class="post__image">
         <%= image_tag @post.image, class: 'card__img' if @post.image.attached? %>
       </div>
@@ -11,12 +20,6 @@
       <div class="post__sentence">
         <%= @post.sentence%>
       </div>
-      <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
-        <div class="post__manage">
-          <%= link_to "編集する", root_path, class: :post__btn %>
-          <%= link_to "削除する", root_path, class: :post__btn %>
-        </div>
-      <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
      
       <div class="post__comments">
         <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>

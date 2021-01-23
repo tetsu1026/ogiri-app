@@ -2,37 +2,7 @@
   <div class="inner">
     <div class="form__wrapper">
       <h2 class="page-heading">お題を投稿する</h2>
-        <%# 部分テンプレートでフォームを表示する %>
-
-        <%= form_with model:@post, local: true do |f|%>
-        <%= render 'error', model: f.object %>
-
-
-        <div class="field">
-          ジャンル 
-          <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box"}) %>
-        </div>
-
-        <div class="field">
-         <%= f.label :image, "写真で一言" %><br />
-         <%= f.file_field :image %>
-       </div>
-
-       
-       <div class="field">
-         <%= f.label :title, "お題" %><br />
-         <%= f.text_area :title, class: :form__text, placeholder:"50字以内でお答えください"%>
-       </div>
-
-       <div class="field">
-         <%= f.label :sentence, "投稿者の回答" %><br />
-         <%= f.text_area :sentence, class: :form__text, placeholder:"50字以内でお答えください" %>
-       </div>
-
-       <div class="actions">
-        <%= f.submit "保存する", class: :form__btn  %>
-       </div>
-      <% end %>
+        <%= render partial: "form", locals: {post:@post} %>
     </div>
   </div>
 </div>
