@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :destroy]
+  before_action :set_post, only: [:show, :edit, :destroy, :update]
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
   
   def index
@@ -20,6 +20,9 @@ class PostsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @post.comments.includes(:user)
+
   end
 
   def edit
