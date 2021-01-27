@@ -21,15 +21,14 @@
         <%= @post.sentence%>
       </div>
      
-      <div class="post__comments">
+      <div class="post__comments", id='messeges'>
         <ul class="comments_lists">
-          <% @comments.each do |comment| %>
-            <li class="comments_list">
-               <%= comment.message %>
-               <%= link_to comment.user.nickname, root_path, class: :comment_user %>
-            </li>
+          <% @comments.reverse_each do |comment| %>
+            <div id="comment_<%= comment.id %>">
+              <%= render partial: 'likes/like', locals: {comment:comment}%>
+            </div>
+            <%= link_to comment.user.nickname, root_path, class: :comment_user %>
           <% end %>
-          <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
         </ul>
       </div>
       <%= form_with model: [@post, @comment], local: true do |f|%>

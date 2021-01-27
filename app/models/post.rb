@@ -1,7 +1,8 @@
 class Post < ApplicationRecord
   belongs_to :user
-  has_many :comments
+  has_many :comments, dependent: :destroy
   has_one_attached :image
+  has_many :likes, dependent: :destroy
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
@@ -19,4 +20,5 @@ class Post < ApplicationRecord
     self.image.attached?
    end
  
+
 end

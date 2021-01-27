@@ -6,9 +6,15 @@ class User < ApplicationRecord
   
   has_many :posts
   has_many :comments
+  has_many :likes
 
   with_options presence: true do
     validates :nickname
     validates :profile
   end
+
+  def liked_by(post_id, comment_id)
+    self.likes.exists?(post_id: post_id, comment_id: comment_id)
+  end
+
 end
