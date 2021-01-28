@@ -219,7 +219,7 @@ a {
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  background-color: black;
+  background-color: #003300;;
   color: #CCCC00;
   padding-left:30px;
   padding-right:30px;
@@ -271,9 +271,10 @@ a {
 }
 
 .post__comments{
-  background-color: #f6f6f6;
+  background-color: #003300;;
   padding: 20px;
   margin: 28px 0 40px 0;
+  font-weight: bold;
 }
 
 .comments_lists{
@@ -285,10 +286,18 @@ a {
   padding-bottom: 5px;
 }
 
+.comment_message {
+  display: inline-block;
+  margin-top: 5px;
+  color: #CCCC00;
+  margin-bottom: 5px;
+}
+
 .comment_user{
   font-size: 16px;
-  color: #999;
+  color: #ffffff;
   text-decoration: underline;
+  margin-left: 20px; 
 }
 
 .show__genre {
@@ -298,6 +307,19 @@ a {
   text-align: center;
   padding: 10px;
 }
+
+.count {
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.comment_field {
+  width: 500px;
+  height: 50px;
+}
+
 
 /* ユーザーページ */
 .user__wrapper{

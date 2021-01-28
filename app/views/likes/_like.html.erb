@@ -1,11 +1,21 @@
-<li class="comments_list">
-  <p><%= comment.message %></p>
-<%if user_signed_in? %>
-  <% if Like.find_by(user_id: current_user.id, post_id: @post.id, comment_id: comment.id) %>
-    <%= button_to 'いいねを取り消す', post_comment_like_path(@post.id, comment.id), method: :delete %>
+<div class="comments_list">
+  <div class="comment_message">
+   <%= comment.message %>
+  </div>
+    <%= link_to "by #{comment.user.nickname}", root_path, class: :comment_user %>
+  <%if user_signed_in? %>
+    <% if Like.find_by(user_id: current_user.id, post_id: @post.id, comment_id: comment.id) %>
+        <%= link_to  post_comment_like_path(@post.id, comment.id), {class: "like-link", method: :delete } do %>
+          <i class="fas fa-grin-squint-tears unlike-btn"></i>
+          <p class="count"><%= comment.likes.count %></p>
+        <% end %>
+    <% else %>
+        <%= link_to post_comment_likes_path(@post.id, comment.id), {class: "like-link", method: :post } do %>
+          <i class="far fa-grin-squint-tears like-btn"></i>
+          <p class="count"><%= comment.likes.count %></p>
+        <% end %>
+    <% end %>
   <% else %>
-    <%= button_to 'いいね', post_comment_likes_path(@post.id, comment.id) %>
+      <p class="count"><i class="fas fa-grin-squint-tears unlike-btn"></i><%= comment.likes.count %></p>
   <% end %>
-<% end %>
-  <%= comment.likes.count %>
-</li>
+</div>

@@ -1,3 +1,30 @@
 // Place all the styles related to the likes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// likes.scss
+
+.like-link {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.like-link:hover {
+  background-color: black !important;
+}
+
+.like-btn {
+  font-size: 20px;
+  color:#CCCC00;
+
+
+}
+ 
+.unlike-btn {
+  font-size: 20px;
+  color: #CCCC00;
+  text-decoration: none;
+}
+
+.like_point {
+}
