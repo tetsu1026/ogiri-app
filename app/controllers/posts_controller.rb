@@ -22,7 +22,7 @@ class PostsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @post.comments.includes(:user)
-    
+    @comment_like = @post.comments.includes(:likes).sort {|a,b| b.likes.size <=> a.likes.size}
   end
 
   def edit

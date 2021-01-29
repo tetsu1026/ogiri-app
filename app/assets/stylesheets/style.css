@@ -321,6 +321,46 @@ a {
 }
 
 
+/* ランキング表*/
+.main_ranking{
+  background-color: #808080;
+  padding: 8px;
+}
+
+.ranking {
+  display: flex;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.ranking_message {
+  margin-left: 10px;
+  color:  #CCCC00;
+}
+
+.ranking_user {
+  margin-left: 10px;
+}
+
+.answer_main {
+  margin-top: 15px; 
+  text-align: center ;
+ }
+
+.smile {
+  margin-left: 10px;
+}
+
+.point_title {
+  text-align: center;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.ranking_count {
+  margin-left: 5px;
+}
+
 /* ユーザーページ */
 .user__wrapper{
   min-height: calc(100vh - 161px);
