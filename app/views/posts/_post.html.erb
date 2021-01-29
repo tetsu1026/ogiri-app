@@ -7,12 +7,12 @@
       <%= image_tag post.image.variant(resize: '250x250'), class: 'card__img' if post.image.attached? %>
     </div>
     <div class="main__title">
-      <%= post.title %>
+      <p class="title"><%= post.title %></p>
     </div>
     <%= link_to " #{post.user.nickname}さんの回答", root_path, class: :card__user %>
-    <div class= "main__sentence">
-      <%= post.sentence %>
-    </div>
+    <div class="main__sentence">
+      <p class="sentence"><%= post.sentence %></p>
     <%=link_to 'お題に挑戦する', post_path(post.id), class: :answer_title %>
+    </div>
   </div>
 </div>

@@ -1,6 +1,7 @@
 <main class="main">
   <div class="inner">
     <div class="post__wrapper">
+    <div class="post__wrapper__2">
       <div class="show__genre">
         <%= @post.genre.name %>
       </div>
@@ -14,7 +15,7 @@
         <%= image_tag @post.image, class: 'card__img' if @post.image.attached? %>
       </div>
       <div class="post__title">
-        <%= @post.title%>
+        <p class="title_word"><%= @post.title%></p>
       </div>
       <%= link_to "#{@post.user.nickname}さんの回答", root_path, class: :post__user %>
       <div class="post__sentence">
@@ -36,10 +37,10 @@
             <p class="ranking_message"><%= comment.message %></p>
             <p class="ranking_user"><%= "by #{@post.user.nickname}" %></p>
             <p class= "smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
-            <% like = comment.likes.count %>
+            <p class="ranking_count"><% like = comment.likes.count %></p>
           </div>
           <% else %>
-            <% like = comment.likes.count %>
+            <p class="ranking_count"><% like = comment.likes.count %></p>
           <div class= "ranking">
             <p>第<%= j %>位</p>
             <p class="ranking_message"><%= comment.message %></p>
@@ -51,7 +52,7 @@
         <% end %>
         </div>
 
-      <h2 class="answer_main"><i class="far fa-lightbulb light"></i>回答一覧<i class="far fa-lightbulb light"></i></h2>
+      <h2 class="answer_main"><i class="fas fa-lightbulb light"></i>回答一覧<i class="fas fa-lightbulb light"></i></h2>
       <div class="post__comments", id='messeges'>
         <ul class="comments_lists">
           <% @comments.reverse_each do |comment| %>
@@ -61,6 +62,8 @@
           <% end %>
         </ul>
       </div>
+      </div>
+
       <%= form_with model: [@post, @comment], local: true do |f|%>
             <div class="field">
                <%= f.label :message, "回答する" %><br />
