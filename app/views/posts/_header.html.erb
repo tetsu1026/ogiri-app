@@ -1,8 +1,9 @@
-<main class="main">
-  <div class="head_inner">
+<header class="header">
+      <div class="inner">
         <div class="nav">
           <div class="nav__left">
             <%= link_to image_tag("main_logo.png", class: :logo), root_path %>
+              OGIRI
           </div>
           <%# ログインしているときは以下を表示するようにしましょう %>
           <% if user_signed_in? %>
@@ -21,16 +22,4 @@
           <%# // ログインしていないときは上記を表示するようにしましょう %>
         </div>
       </div>
-  <div class="inner">
-    <%# ログインしているときは以下を表示する %>
-      <%# <div class="greeting"> %>
-        <%# こんにちは、 %>
-        <%# <%= link_to "ユーザー名さん", root_path, class: :greeting__link%>
-      <%# </div> %>
-    <%# // ログインしているときは上記を表示する %>
-    <div class="card__wrapper">
-      <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
-      <%= render partial: 'post', collection: @post %>
-    </div>
-  </div>
-</main>
+    </header>

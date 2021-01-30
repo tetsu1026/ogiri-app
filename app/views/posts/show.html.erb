@@ -1,4 +1,4 @@
-<main class="main">
+<main class="show_main">
   <div class="inner">
     <div class="post__wrapper">
     <div class="post__wrapper__2">
@@ -25,7 +25,7 @@
         <h2 class="point_title"><i class="fas fa-crown crown"></i>ポイントランキング<i class="fas fa-crown crown"></i></h2> 
         <div class="main_ranking">
         <% like = 0 %>
-        <% j = 1%>
+        <% j = 1 %>
         <% @comment_like.each.with_index(1) do |comment, i| %>
           <% if i == 1 %>
             <% like = comment.likes.count %>
@@ -33,16 +33,16 @@
           <% if comment.likes.count != like %>
             <% j = i %>
           <div class= "ranking">
-            <p>第<%= j %>位</p>
+            <p class="ranking_number">第<%= j %>位</p>
             <p class="ranking_message"><%= comment.message %></p>
             <p class="ranking_user"><%= "by #{@post.user.nickname}" %></p>
             <p class= "smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
             <p class="ranking_count"><% like = comment.likes.count %></p>
           </div>
           <% else %>
+            <div class= "ranking">
             <p class="ranking_count"><% like = comment.likes.count %></p>
-          <div class= "ranking">
-            <p>第<%= j %>位</p>
+            <p class="ranking_number">第<%= j %>位</p>
             <p class="ranking_message"><%= comment.message %></p>
             <p class="ranking_user"><%= "by #{@post.user.nickname}" %></p>
             <p class= "smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
@@ -66,11 +66,11 @@
 
       <%= form_with model: [@post, @comment], local: true do |f|%>
             <div class="field">
-               <%= f.label :message, "回答する" %><br />
+               <%= f.label :message, "回答する", class: :comment_word %><br />
                <%= f.text_field :message, class: :comment_field %>
             </div>
             <div class="actions">
-               <%= f.submit "送信する", class: :form__btn  %>
+               <%= f.submit "送信する", class: :comment_form__btn  %>
             </div>
           <% end %> 
     </div>

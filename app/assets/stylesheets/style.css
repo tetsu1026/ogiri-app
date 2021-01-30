@@ -40,8 +40,18 @@ a {
   background-color: black;
   margin-bottom: 48px;
   padding: 20px 0;
-
 }
+
+.head_inner{
+  background-color: rgba(25, 76, 51, 0.9);
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 95vw;
+}
+
 .inner {
   width: 1024px;
   margin: 0 auto;
@@ -56,7 +66,7 @@ a {
   color: #FFFF66;
 }
 .logo {
-  width: 30px;
+  width: 100px;
 }
 .nav__btn{
   display: inline-block;
@@ -132,6 +142,9 @@ a {
 .main {
   background-image: url("main.png");
   background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 .greeting{
@@ -157,11 +170,12 @@ a {
   margin-bottom: 40px;
   padding: 5px;
   background-color: rgba(25, 76, 51, 0.9);
+  margin-top: 150px;
 }
 
 .genre {
   font-size: 15px;
-  background-color: black;
+  background-color: rgb(88, 8, 9);
   color: #CCCC00;
   text-align: center;
   margin-bottom: 15px;
@@ -207,7 +221,7 @@ a {
   margin-top: 10px;
   text-align: center;
   text-decoration: underline;
-  background-color: black;
+  background-color: #330000;
   color: #CCCC00;
   padding: 3px;
 }
@@ -226,18 +240,22 @@ a {
   color: #FFFF66;
   padding: 5px;
   text-align: center;
+  background-color: rgba(18, 27, 129, 0.5);
 }
 
 /* 詳細ページ */
+.show_main {
+  background-image: url("show_main.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .post__wrapper{
   min-height: calc(100vh - 161px);
 }
 
-.post__wrapper__2{
-  background-color: rgba(25, 76, 51, 0.8);
-}
+
 .post__title{
-  background-color: rgba(25, 76, 51, 0.8);
 }
 
 .title_word {
@@ -251,7 +269,7 @@ a {
 .post__user{
   display: block;
   font-size: 20px;
-  color: #999;
+  color:black;
   text-align: left;
   text-decoration: underline;
   font-weight: bold;
@@ -267,7 +285,7 @@ a {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  background-color: black;
+  background-color: rgba(25, 76, 51, 0.5);
   color: #CCCC00;
   padding: 10px
 }
@@ -288,6 +306,7 @@ a {
   border-radius: 3px;
   transition: 0.4s ease;
   margin: 0 4px;
+  background-color: #330000;
 }
 .post__btn:hover{
   color: #fff;
@@ -295,7 +314,7 @@ a {
 }
 
 .post__comments{
-  background-color: #003300;;
+  background-color: rgba(25, 76, 51, 0.5);
   padding: 20px;
   margin: 28px 0 40px 0;
   font-weight: bold;
@@ -326,7 +345,7 @@ a {
 
 .show__genre {
   font-size: 20px;
-  background-color: black;
+  background-color: rgb(88, 8, 9);
   color: #CCCC00;
   text-align: center;
   padding: 10px;
@@ -342,12 +361,43 @@ a {
 .comment_field {
   width: 500px;
   height: 50px;
+  background-color: rgba(25, 76, 51, 0.5);
+  font-weight: bold;
+  color: #CCCC00;
 }
+
+.comment_form__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #87CEFA;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+.comment_word {
+  color: white;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.answer_main {
+  margin-top: 15px; 
+  text-align: center ;
+  color: black;
+ }
 
 
 /* ランキング表*/
 .main_ranking{
-  background-color: #808080;
+  background-color: rgba(18, 27, 129, 0.4);
   padding: 8px;
 }
 
@@ -357,6 +407,10 @@ a {
   font-weight: bold;
 }
 
+.ranking_number {
+  color: white;
+}
+
 .ranking_message {
   margin-left: 10px;
   color:  #CCCC00;
@@ -364,12 +418,8 @@ a {
 
 .ranking_user {
   margin-left: 10px;
+  color:white;
 }
-
-.answer_main {
-  margin-top: 15px; 
-  text-align: center ;
- }
 
 .smile {
   margin-left: 10px;
@@ -379,10 +429,12 @@ a {
   text-align: center;
   margin-top:15px;
   margin-bottom:15px;
+  color: black;
 }
 
 .ranking_count {
-  margin-left: 5px;
+  margin-left: 10px;
+  color:white;
 }
 
 /* ユーザーページ */
