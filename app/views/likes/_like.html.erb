@@ -5,12 +5,12 @@
     <%= link_to "by #{comment.user.nickname}", root_path, class: :comment_user %>
   <%if user_signed_in? %>
     <% if Like.find_by(user_id: current_user.id, post_id: @post.id, comment_id: comment.id) %>
-        <%= link_to  post_comment_like_path(@post.id, comment.id), {class: "like-link", method: :delete } do %>
+        <%= link_to  post_comment_like_path(@post, comment, comment.likes), {class: "like-link", method: :delete } do %>
           <i class="fas fa-grin-squint-tears unlike-btn"></i>
           <p class="count"><%= comment.likes.count %></p>
         <% end %>
     <% else %>
-        <%= link_to post_comment_likes_path(@post.id, comment.id), {class: "like-link", method: :post } do %>
+        <%= link_to post_comment_likes_path(@post, comment), {class: "like-link", method: :post } do %>
           <i class="far fa-grin-squint-tears like-btn"></i>
           <p class="count"><%= comment.likes.count %></p>
         <% end %>

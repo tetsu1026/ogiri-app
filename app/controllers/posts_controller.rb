@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :destroy, :update]
+  before_action :move_to_index, only: [:edit, :destroy]
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
   
   def index
@@ -51,5 +52,11 @@ class PostsController < ApplicationController
 
   def set_post
     @post = Post.find(params[:id])
+  end
+
+  def move_to_index
+    unless user_signed_in? && current_user.id == @post.user_id
+      redirect_to action: :index
+    end
   end
 end

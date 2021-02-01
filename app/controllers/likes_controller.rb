@@ -11,6 +11,6 @@ class LikesController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:comment_id])
     Like.find_by(user_id: current_user.id, post_id: @post.id, comment_id: @comment.id).destroy
-    redirect_to post_path
+    redirect_to post_path(@comment.post)
   end
 end

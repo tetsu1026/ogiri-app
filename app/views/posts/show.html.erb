@@ -38,11 +38,11 @@
             <p class="ranking_message"><%= comment.message %></p>
             <p class="ranking_user"><%= "by #{@post.user.nickname}" %></p>
             <p class= "smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
-            <p class="ranking_count"><% like = comment.likes.count %></p>
+            <% like = comment.likes.count %>
           </div>
           <% else %>
             <div class= "ranking">
-            <p class="ranking_count"><% like = comment.likes.count %></p>
+            <p ><% like = comment.likes.count %></p>
             <p class="ranking_number">第<%= j %>位</p>
             <p class="ranking_message"><%= comment.message %></p>
             <p class="ranking_user"><%= "by #{@post.user.nickname}" %></p>
@@ -71,9 +71,11 @@
                <%= f.text_field :message, class: :comment_field %>
             </div>
             <div class="actions">
-               <%= f.submit "送信する", class: :comment_form__btn  %>
+               <%= f.submit "送信する", class: :comment_form__btn, id: "submit"  %>
             </div>
           <% end %> 
+          <div id="list">
+          </div>
     </div>
   </div>
 </main>
