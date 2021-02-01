@@ -4,7 +4,7 @@
   </div>
   <div class="card__body">
     <div class="main_image">
-      <%= image_tag post.image.variant(resize: '250x250'), class: 'card__img' if post.image.attached? %>
+      <%= image_tag post.image.variant(resize: '180x180'), class: 'card__img' if post.image.attached? %>
     </div>
     <div class="main__title">
       <p class="title"><%= post.title %></p>
