@@ -2,6 +2,10 @@
   <%= render partial: "posts/header"%>
   <div class="inner">
     <div class="user__wrapper">
+      <div class="user_image">
+      <p class="pro_camera"><i class="fas fa-camera-retro camera"></i></p>
+      <p class="pro_image"><%= image_tag @user.image.variant(resize: '180x180'), class: 'card__img' if @user.image.attached? %></p>
+      </div>
       <div class="name">
         <i class="fas fa-pencil-alt pencil"></i>
         <p class="name__col1">名前:</p>

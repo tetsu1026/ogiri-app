@@ -25,6 +25,11 @@
         </div>
 
         <div class="field">
+        <%= f.label :image, "プロフィール写真" ,class: :form__text_1 %><br />
+        <%= f.file_field :image %>
+        </div>
+
+        <div class="field">
           <%= f.label :nickname, "nickname" %><br />
           <%= f.text_field :nickname %>
         </div>
