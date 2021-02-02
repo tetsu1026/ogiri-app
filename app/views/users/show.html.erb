@@ -1,0 +1,23 @@
+<div class="show_main">
+  <%= render partial: "posts/header"%>
+  <div class="inner">
+    <div class="user__wrapper">
+      <div class="name">
+        <i class="fas fa-pencil-alt pencil"></i>
+        <p class="name__col1">名前:</p>
+        <p class="profile__col2"><%= @user.nickname %></p>
+      </div>
+      <div class="profile">
+        <i class="fas fa-pencil-alt pencil"></i>
+        <p class="name__col1">一言プロフィール:</p>
+        <p class="profile__col2"><%= @user.profile %></p>
+      </div>
+      <h2 class="page-heading_user">
+        <%= "#{@user.nickname}さんのお題一覧"%>
+      </h2>
+      <div class="user__card">
+        <%= render partial: "posts/post", collection:@post %>
+      </div>
+    </div>
+  </div>
+</div>
