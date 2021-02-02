@@ -14,8 +14,10 @@
 ### Association
 - has_many :posts
 - has_many :comments
+- has_many :likes
+- has_many :post_likes
 
-## prototypesテーブル
+## postsテーブル
 
 | Column    | Type       | Options                        |
 | ---------------------- | ------------------------------ |
@@ -27,6 +29,8 @@
 ### Association
 - has_many :comments
 - belongs_to :user
+- has_many :likes
+- has_many :post_likes
 
 ## commentsテーブル
 
@@ -38,4 +42,30 @@
 
 - belongs_to :user
 - belongs_to :post
+- has_many :likes
+- has_many :post_likes
+
+## likesテーブル
+
+| Column    | Type       | Options                        |
+| --------- | ---------- | ------------------------------ |
+| user      | references | null: false, foreign_key: true |
+| post      | references | null: false, foreign_key: true |
+| comment   | references | null: false, foreign_key: true |
+
+- belongs_to :user
+- belongs_to :post
+- belongs_to :comment
+
+## post_likesテーブル
+
+| Column    | Type       | Options                        |
+| --------- | ---------- | ------------------------------ |
+| user      | references | null: false, foreign_key: true |
+| post      | references | null: false, foreign_key: true |
+
+
+- belongs_to :user
+- belongs_to :post
+- 
 

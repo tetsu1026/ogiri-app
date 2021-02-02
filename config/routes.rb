@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'posts#index'
   resources :users, only: :show
   resources :posts do
+    resources :post_likes, only: [:create, :destroy]
     resources :comments, only: :create do
       resources :likes, only: [:create, :destroy]
     end
