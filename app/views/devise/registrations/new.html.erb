@@ -10,17 +10,17 @@
         <%= render 'posts/error', model: f.object %>
 
         <div class="field">
-          <%= f.label :email, "メールアドレス" %><br />
+          <%= f.label :email, "メールアドレス", class: :form__text_1 %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
         </div>
 
         <div class="field">
-          <%= f.label :password, "パスワード（6文字以上）" %><br />
+          <%= f.label :password, "パスワード（6文字以上）", class: :form__text_1 %><br />
           <%= f.password_field :password, autocomplete: "new-password" %>
         </div>
 
         <div class="field">
-          <%= f.label :password, "パスワード再入力" %><br />
+          <%= f.label :password, "パスワード再入力",class: :form__text_1 %><br />
           <%= f.password_field :password, autocomplete: "new-password" %>
         </div>
 
@@ -30,12 +30,12 @@
         </div>
 
         <div class="field">
-          <%= f.label :nickname, "nickname" %><br />
+          <%= f.label :nickname, "nickname",class: :form__text_1 %><br />
           <%= f.text_field :nickname %>
         </div>
 
         <div class="field">
-          <%= f.label :profile, "プロフィール（自分を一言で表現してください）" %><br />
+          <%= f.label :profile, "プロフィール（自分を一言で表現してください）" ,class: :form__text_1%><br />
           <%= f.text_area :profile, class: :form__text %>
         </div>
 

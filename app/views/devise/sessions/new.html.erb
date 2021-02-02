@@ -8,12 +8,12 @@
         <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
         <div class="field">
-          <%= f.label :email, "メールアドレス" %><br />
+          <%= f.label :email, "メールアドレス",class: :form__text_1 %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
         </div>
 
         <div class="field">
-          <%= f.label :password, "パスワード（6文字以上）" %><br />
+          <%= f.label :password, "パスワード（6文字以上）" ,class: :form__text_1 %><br />
           <%= f.password_field :password, autocomplete: "current-password" %>
         </div>
 
