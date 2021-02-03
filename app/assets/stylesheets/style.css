@@ -50,9 +50,8 @@ a {
 
 .inner_login {
   width: 1024px;
-  position: absolute;
-  top: 180px;
-  left:150px;
+  margin: 0 auto;
+  padding-top: 180px;
 }
 
 .nav {
@@ -166,16 +165,14 @@ a {
   background-image: url("main.png");
   background-size: cover;
   background-attachment: fixed;
-  
+  padding-bottom: 130px;
 }
 
 .main_log {
   background-image: url("main.png");
   background-size: cover;
   background-attachment: fixed;
-  width: 100vw;
   height: 100vh;
-  
 }
 
 .head_inner{
@@ -210,8 +207,8 @@ a {
 
 .card {
   width: calc((100% - 50px) / 3);
-  margin-bottom: 100px;
-  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-top: 200px;
   padding: 5px;
   background-color: rgba(25, 76, 51, 0.9);
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -293,6 +290,7 @@ a {
   background-image: url("show_main.png");
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom:  30px;
 }
 
 .post__wrapper{
@@ -551,6 +549,7 @@ a {
   position: relative;
   background-color: black;
   padding: 20px 0;
+  margin-top:30px
 }
 .copyright {
   text-align: center;
