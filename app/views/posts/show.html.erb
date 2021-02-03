@@ -64,7 +64,7 @@
         </ul>
       </div>
       </div>
-
+      <% if user_signed_in? %>
       <%= form_with model: [@post, @comment], local: true do |f|%>
             <div class="field">
                <%= f.label :message, "回答する", class: :comment_word %><br />
@@ -74,8 +74,7 @@
                <%= f.submit "送信する", class: :comment_form__btn, id: "submit"  %>
             </div>
           <% end %> 
-          <div id="list">
-          </div>
+      <% end %>
     </div>
   </div>
 </main>
