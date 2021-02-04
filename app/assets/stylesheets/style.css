@@ -37,13 +37,6 @@ a {
 
 /* ヘッダー */
 
-.header {
-  background-color: rgba(25, 76, 51, 0.9);
-  margin-bottom: 20px;
-  padding: 20px 0;
-  height: 100px;
-}
-
 .inner {
   width: 1024px;
   margin: 0 auto;
@@ -68,14 +61,6 @@ a {
   padding-bottom: 10px;
   width: 185px;
   margin-left: 100px;
-}
-
-.logo_2 {
-  padding-bottom: 10px;
-  width: 150px;
-  position: relative;
-  right: 5vw;
-  bottom:20px;
 }
 
 .nav__right{
@@ -143,8 +128,8 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
+  background: #0000FF;
+  border: 1px #0000FF solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -272,11 +257,6 @@ a {
   color: #800000;
 }
 
-.main__sentence {
-  
-
-}
-
 .sentence {
   font-weight: bold;
   color: #FFFF66;
@@ -309,9 +289,6 @@ a {
 
 .post__wrapper{
   min-height: calc(100vh - 161px);
-}
-
-.post__title{
 }
 
 .title_word {
@@ -613,11 +590,6 @@ a {
   padding: 20px 0;
   margin-top:30px;
   width: 100%;
-}
-.copyright {
-  text-align: center;
-  color: #fff;
-  font-size: 10px;
 }
 
 /* タブレット対応 */

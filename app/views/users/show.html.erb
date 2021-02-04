@@ -24,7 +24,7 @@
         <p class="profile__col2"><%= @user.profile %></p>
       </div>
       <h2 class="page-heading_user">
-        <%= "#{@user.nickname}さんのお題一覧"%>
+        <i class="fas fa-lightbulb light"></i><%= "#{@user.nickname}さんのお題一覧"%><i class="fas fa-lightbulb light"></i>
       </h2>
       <div class="user__card">
         <%= render partial: "posts/post", collection:@post %>

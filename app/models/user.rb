@@ -15,8 +15,4 @@ class User < ApplicationRecord
     validates :profile
   end
 
-  def liked_by(post_id, comment_id)
-    self.likes.exists?(post_id: post_id, comment_id: comment_id)
-  end
-
 end

@@ -41,7 +41,7 @@
       <div class="post__title">
         <p class="title_word"><%= @post.title%></p>
       </div>
-      <%= link_to "#{@post.user.nickname}さんの回答", root_path, class: :post__user %>
+      <%= link_to "#{@post.user.nickname}さんの回答", user_path(@post.user.id), class: :post__user %>
       <div class="post__sentence">
         <%= @post.sentence%>
       </div>
