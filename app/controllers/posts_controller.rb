@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   
   def index
     @post = Post.includes(:user).order("created_at DESC")
+    @post_like = Post.includes(:post_likes).sort {|a,b| b.post_likes.size <=> a.post_likes.size}
   end
 
   def new

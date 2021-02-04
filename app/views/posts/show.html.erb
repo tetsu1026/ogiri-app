@@ -1,6 +1,29 @@
-<%= render partial: "show_headder"%>
+<div class="head_inner">
+  <div class="nav">
+    <div class="nav__left">
+      <%= link_to image_tag("main_logo.png", class: :logo), root_path %>
+    </div>
+   
+    <% if user_signed_in? %>
+      <div class="nav__right">
+        <%= link_to "My Page", user_path(current_user.id), class: :nav__btn %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__btn %>
+        <%= link_to "出題する", new_post_path, class: :nav__btn %><li>
+      </div>
+    <% else %>
+      <div class="nav__right">
+        <p class="menu_pen" ><i class="fas fa-pen-fancy bar_pen"></i></p>
+        <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
+        <p class="menu_pen" ><i class="fas fa-pen-fancy bar_pen"></i></p>
+        </i><%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+      </div>
+    <% end %>
+    </div>
+</div>
+
+
 <main class="show_main">
-  <div class="inner">
+  <div class="show_inner">
     <div class="post__wrapper">
     <div class="post__wrapper__2">
       <div class="show__genre">

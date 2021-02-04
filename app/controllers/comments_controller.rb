@@ -7,8 +7,9 @@ class CommentsController < ApplicationController
       redirect_to post_path(@comment.post)
     else
       @post = @comment.post
-      @comments = @prototype.post
-      render "prototypes/show"
+      @comments = @post.comments
+      @comment_like = @post.comments.includes(:likes).sort {|a,b| b.likes.size <=> a.likes.size}
+      render "posts/show"
     end
   end
 

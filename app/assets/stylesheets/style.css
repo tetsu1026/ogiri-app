@@ -15,6 +15,7 @@ div {
   padding: 0;
 }
 
+
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
   color: #3b4043;
@@ -79,7 +80,7 @@ a {
 
 .nav__right{
   margin-top: 40px;
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
 .nav__right_show {
@@ -177,7 +178,7 @@ a {
 
 .head_inner{
   position: absolute;
-  top: 10px;
+  top: 25px;
   left: 0px;
   right: 0px;
   margin: auto;
@@ -207,8 +208,8 @@ a {
 
 .card {
   width: calc((100% - 50px) / 3);
-  margin-bottom: 50px;
-  margin-top: 200px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   padding: 5px;
   background-color: rgba(25, 76, 51, 0.9);
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -285,12 +286,25 @@ a {
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
+.question_main {
+  margin-top: 200px;
+  font-size:40px;
+  text-align: center;
+  color: black;
+ }
+
 /* 詳細ページ */
 .show_main {
   background-image: url("show_main.png");
   background-size: cover;
   background-attachment: fixed;
   padding-bottom:  30px;
+}
+
+.show_inner {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 180px;
 }
 
 .post__wrapper{
@@ -443,7 +457,7 @@ a {
  }
 
 
-/* ランキング表*/
+/* コメントランキング表*/
 .main_ranking{
   background-color: rgba(18, 27, 129, 0.4);
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -486,8 +500,57 @@ a {
   color:white;
 }
 
+/* お題ランキング表*/
+
+.index_ranking{
+  position: relative;
+  top:170px;
+  background-color: rgba(18, 27, 129, 0.8);
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  padding: 8px;
+}
+
+.rank_title {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  margin-top:15px;
+  margin-bottom:15px;
+  color: black;
+}
+
+.rank__img {
+  margin: auto 10px;
+}
+
+.image_smile{
+  margin-top: auto;
+}
+
+.image_ranking_number{
+  margin: auto 0;
+  color: white;
+}
+
+.image_ranking_count{
+  margin-top: auto;
+  margin-left: 5px;
+  color:white;
+}
+
 /* ユーザーページ */
-.user__wrapper{
+.user_show_main {
+  background-image: url("show_main.png");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom:  300px;
+}
+
+.user_show_inner {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: auto;
 }
 
 .name {
@@ -517,8 +580,8 @@ a {
 }
 
 .page-heading_user{
-  position: relative;
-  top: 200px;
+  margin-top: 200px;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -541,7 +604,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
 }
 /* フッター */
 
@@ -549,7 +611,8 @@ a {
   position: relative;
   background-color: black;
   padding: 20px 0;
-  margin-top:30px
+  margin-top:30px;
+  width: 100%;
 }
 .copyright {
   text-align: center;

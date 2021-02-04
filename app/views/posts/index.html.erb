@@ -1,14 +1,64 @@
 <main class="main">
   <%= render partial: "header"%>
   <div class="inner">
-    <%# ログインしているときは以下を表示する %>
-      <%# <div class="greeting"> %>
-        <%# こんにちは、 %>
-        <%# <%= link_to "ユーザー名さん", root_path, class: :greeting__link%>
-      <%# </div> %>
-    <%# // ログインしているときは上記を表示する %>
+  <h2 class="rank_title"><i class="fas fa-crown crown"></i>お題ポイントランキング<i class="fas fa-crown crown"></i></h2> 
+    <div class="index_ranking">
+    <% like = 0 %>
+    <% j = 1 %>
+    <% @post_like.each.with_index(1) do |post, i| %>
+     <% if post.title.present? %>
+      <% if i == 1 %>
+        <% like = post.post_likes.count %>
+      <% end %>
+      <% if post.post_likes.count != like %>
+        <% j = i %>
+
+      <div class= "ranking">
+        <p class="ranking_number">第<%= j %>位</p>
+        <p class="ranking_message"><%= post.title %></p>
+        <p class= "smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
+        <% like = post.post_likes.count %>
+      </div>
+  
+      <% else %>
+      <div class= "ranking">
+      <% like = post.post_likes.count %>
+      <p class="ranking_number">第<%= j %>位</p>
+      <p class="ranking_message"><%= post.title %></p>
+      <p class= "smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
+      <p class ="ranking_count"><%= post.post_likes.count %></p>
+      </div>
+      <% end %>
+      <% else %>
+     
+     <% if i == 1 %>
+        <% like = post.post_likes.count %>
+      <% end %>
+      <% if post.post_likes.count != like %>
+        <% j = i %>
+
+      <div class= "ranking">
+        <p class="image_ranking_number">第<%= j %>位</p>
+        <%= image_tag post.image.variant(resize: '60x60'), class: 'rank__img' if post.image.attached? %>
+        <p class= "image_smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
+        <% like = post.post_likes.count %>
+      </div>
+  
+      <% else %>
+      <div class= "ranking">
+      <% like = post.post_likes.count %>
+      <p class="image_ranking_number">第<%= j %>位</p>
+      <%= image_tag post.image.variant(resize: '60x60'), class: 'rank__img' if post.image.attached? %>
+      <p class= "image_smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
+      <p class ="image_ranking_count"><%= post.post_likes.count %></p>
+      </div>
+      <% end %>
+      <% end %>
+
+    <% end %>
+    </div>
+    <h2 class="question_main"><i class="fas fa-lightbulb light"></i>お題一覧<i class="fas fa-lightbulb light"></i></h2>
     <div class="card__wrapper">
-      <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
       <%= render partial: 'post', collection: @post %>
     </div>
   </div>
