@@ -32,9 +32,9 @@
        <% if @post_like.present? %>
          <div class="likes_lists">
          <% @post_like.each do |post| %>
-         <% if post.title.present? %>
+         <% if post.post.title.present? %>
          <div class="like_title">
-         <i class="fas fa-star star"></i><%= post.title %>
+         <i class="fas fa-star star"></i><%= post.post.title %>
          </div>
          <%else%>
          <div class="like_title">
