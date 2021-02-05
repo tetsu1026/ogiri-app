@@ -217,10 +217,6 @@ a {
   display: flex;
 }
 
-.main__title {
- 
-}
-
 .title {
   margin-bottom: 8px;
   font-weight: bold;
@@ -501,7 +497,7 @@ a {
 }
 
 .image_smile{
-  margin-top: auto;
+  margin: auto 5px;
 }
 
 .image_ranking_number{
@@ -510,9 +506,14 @@ a {
 }
 
 .image_ranking_count{
-  margin-top: auto;
-  margin-left: 5px;
+  margin: auto 5px;
   color:white;
+}
+
+.ranking_sentence {
+  margin:auto 0;
+  
+  color:  #CCCC00;
 }
 
 /* ユーザーページ */
@@ -557,7 +558,7 @@ a {
 }
 
 .page-heading_user{
-  margin-top: 200px;
+  margin-top: 40px;
   text-align: center;
   color: #ffffff;
 }
@@ -576,12 +577,52 @@ a {
 }
 .user__card {
   position: relative;
-  top:90px;
+  top:20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
+
+/* お気に入り投稿一覧*/
+
+.like-list{
+}
+
+.likes_lists{
+  list-style-type: square;
+  padding-bottom: 5px;
+  background-color: rgba(25, 76, 51, 0.5);
+  width: 600px;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+
+.like_title {
+  color: #CCCC00;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.like__img {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.like-heading_user{
+  margin-top: 250px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.like_sentence {
+  display: inline-block;
+  color: #CCCC00;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
 /* フッター */
 
 .footer {

@@ -23,6 +23,32 @@
         <p class="name__col1">一言プロフィール:</p>
         <p class="profile__col2"><%= @user.profile %></p>
       </div>
+      
+      <h2 class="like-heading_user">
+      <i class="fas fa-heartbeat heart"></i><%= "#{@user.nickname}さんの好きなお題"%><i class="fas fa-heartbeat heart"></i>
+      </h2>
+      
+      <div class=like-list >
+       <% if @post_like.present? %>
+         <div class="likes_lists">
+         <% @post_like.each do |post| %>
+         <% if post.title.present? %>
+         <div class="like_title">
+         <i class="fas fa-star star"></i><%= post.title %>
+         </div>
+         <%else%>
+         <div class="like_title">
+         <i class="fas fa-star image_star"></i><%= image_tag post.image.variant(resize: '60x60'), class: 'like__img' if @user.image.attached? %>
+         <div class="like_sentence">
+         <%= post.sentence%>
+         </div>
+         </div>
+         <% end %>
+        <% end %>
+       <% end %>
+       </div>
+       </div>
+
       <h2 class="page-heading_user">
         <i class="fas fa-lightbulb light"></i><%= "#{@user.nickname}さんのお題一覧"%><i class="fas fa-lightbulb light"></i>
       </h2>
