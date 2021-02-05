@@ -53,8 +53,30 @@
         <i class="fas fa-lightbulb light"></i><%= "#{@user.nickname}さんのお題一覧"%><i class="fas fa-lightbulb light"></i>
       </h2>
       <div class="user__card">
-        <%= render partial: "posts/post", collection:@post %>
+        <%#= render partial: "posts/post", collection:@post %>
+        <% @post.each do |post| %>
+
+        <div class="card">
+          <div class="genre" >
+          <%= post.genre.name %>
+        </div>
+        <div class="card__body">
+        <div class="main_image">
+           <%= image_tag post.image.variant(resize: '180x180'), class: 'card__img' if post.image.attached? %>
+        </div>
+        <div class="main__title">
+          <p class="title"><%= post.title %></p>
+        </div>
+        <%= link_to " #{post.user.nickname}さんの回答", user_path(post.user_id), class: :card__user %>
+        <div class="main__sentence">
+          <p class="sentence"><%= post.sentence %></p>
+          <%=link_to 'お題に挑戦する', post_path(post.id), class: :answer_title %>
+        </div>
       </div>
+        <p class="count"><i class="fas fa-grin-squint-tears unlike-btn"></i><%= post.post_likes.count %></p>
+     </div>
+      <% end %>
+     </div>
     </div>
   </div>
 </main>
