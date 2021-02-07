@@ -63,6 +63,15 @@ a {
   margin-left: 100px;
 }
 
+.hello {
+  font-weight: bold;
+  margin-top: 45px;
+  margin-left: 550px;
+  color:  #FFFF66;
+}
+  
+
+
 .nav__right{
   margin-top: 40px;
   margin-right: 20px;
@@ -434,6 +443,7 @@ a {
   color: #ffffff;
   text-decoration: underline;
   margin-left: 20px; 
+  margin-right: 5px;
 }
 
 .show__genre {
