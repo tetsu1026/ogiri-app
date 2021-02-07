@@ -19,6 +19,7 @@
         <p class="ranking_message"><%= post.title %></p>
         <p class= "smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
         <% like = post.post_likes.count %>
+        <p class ="ranking_count"><%= post.post_likes.count %></p>
       </div>
   
       <% else %>
@@ -44,6 +45,7 @@
         <p class="ranking_sentence"><%= post.sentence %></p>
         <p class= "image_smile"><i class="fas fa-grin-squint-tears unlike-btn"></i></p> 
         <% like = post.post_likes.count %>
+        <p class ="image_ranking_count"><%= post.post_likes.count %></p>
       </div>
   
       <% else %>
