@@ -38,9 +38,9 @@
          </div>
          <%else%>
          <div class="like_title">
-         <i class="fas fa-star image_star"></i><%= image_tag post.image.variant(resize: '60x60'), class: 'like__img' if @user.image.attached? %>
+         <i class="fas fa-star image_star"></i><%= image_tag post.post.image.variant(resize: '60x60'), class: 'like__img' if post.post.image.attached? %>
          <div class="like_sentence">
-         <%= post.sentence%>
+         <%= post.post.sentence %>
          </div>
          </div>
          <% end %>

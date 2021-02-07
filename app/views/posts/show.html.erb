@@ -5,17 +5,25 @@
     </div>
    
     <% if user_signed_in? %>
+      <% if current_user.image.present? %>
+      <div class="head_user">
+      
+      <%= image_tag current_user.image.variant(resize: '80x80'), class: 'head_image' if current_user.image.attached? %></p>
+      <%= link_to "ようこそ、#{current_user.nickname}さん", user_path(current_user.id), class: :head_name %>
+      <% else %>
+      <div class="head_alt_user">
+      <i class="fas fa-user-alt alt_user"></i>
+      <%= link_to "ようこそ、#{current_user.nickname}さん", user_path(current_user.id), class: :head_alt %>
+      <% end %>
+      </div>
       <div class="nav__right">
-        <%= link_to "My Page", user_path(current_user.id), class: :nav__btn %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__btn %>
         <%= link_to "出題する", new_post_path, class: :nav__btn %><li>
       </div>
     <% else %>
       <div class="nav__right">
-        <p class="menu_pen" ><i class="fas fa-pen-fancy bar_pen"></i></p>
         <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
-        <p class="menu_pen" ><i class="fas fa-pen-fancy bar_pen"></i></p>
-        </i><%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+        <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
       </div>
     <% end %>
     </div>
@@ -47,6 +55,7 @@
       </div>
          
         <h2 class="point_title"><i class="fas fa-crown crown"></i>ポイントランキング<i class="fas fa-crown crown"></i></h2> 
+       
         <div class="main_ranking">
         <% like = 0 %>
         <% j = 1 %>
@@ -78,6 +87,7 @@
         </div>
 
       <h2 class="answer_main"><i class="fas fa-lightbulb light"></i>回答一覧<i class="fas fa-lightbulb light"></i></h2>
+      
       <div class="post__comments", id='messeges'>
         <ul class="comments_lists">
           <% @comments.reverse_each do |comment| %>
@@ -88,6 +98,7 @@
         </ul>
       </div>
       </div>
+      
       <% if user_signed_in? %>
       <%= form_with model: [@post, @comment], local: true do |f|%>
             <div class="field">

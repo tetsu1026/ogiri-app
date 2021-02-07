@@ -5,8 +5,18 @@
     </div>
     
     <% if user_signed_in? %>
+      <% if current_user.image.present? %>
+      <div class="head_user">
+      
+      <%= image_tag current_user.image.variant(resize: '80x80'), class: 'head_image' if current_user.image.attached? %></p>
+      <%= link_to "ようこそ、#{current_user.nickname}さん", user_path(current_user.id), class: :head_name %>
+      <% else %>
+      <div class="head_alt_user">
+      <i class="fas fa-user-alt alt_user"></i>
+      <%= link_to "ようこそ、#{current_user.nickname}さん", user_path(current_user.id), class: :head_alt %>
+      <% end %>
+      </div>
       <div class="nav__right">
-        <%= link_to "My Page", user_path(current_user.id), class: :nav__btn %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__btn %>
         <%= link_to "出題する", new_post_path, class: :nav__btn %><li>
       </div>
