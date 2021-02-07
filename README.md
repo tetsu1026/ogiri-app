@@ -40,6 +40,7 @@ password:aaa333
 # DEMO
 ## ログイン前のトップページ
 [![Image from Gyazo](https://i.gyazo.com/2681ea750b0d24860f10d29f840c2433.gif)](https://gyazo.com/2681ea750b0d24860f10d29f840c2433)
+![demo](https://gyazo.com/https://i.gyazo.com/2681ea750b0d24860f10d29f840c2433.gif/raw)
 
 # 利用方法
 ### ログイン
