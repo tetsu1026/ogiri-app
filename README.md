@@ -39,7 +39,7 @@ password:aaa333
 
 # DEMO
 ## ログイン前のトップページ
-[![Image from Gyazo](https://user-images.githubusercontent.com/76236035/107165761-462b1800-69f7-11eb-80ba-d77a1d3de5b8.mp4)](https://gyazo.com/2681ea750b0d24860f10d29f840c2433)
+[![Image from Gyazo](https://i.gyazo.com/9a4f0d0a60b94b939e5c679d51360f29.jpg)](https://gyazo.com/9a4f0d0a60b94b939e5c679d51360f29)
 
 # 利用方法
 ### ログイン
