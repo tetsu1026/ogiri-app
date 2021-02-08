@@ -219,7 +219,9 @@ a {
   width: 95vw;
   height:120px;
   background-color: rgba(25, 76, 51, 0.7);
-  
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  border: 1px  rgba(25, 76, 51, 0.5) solid;
+  border-radius: 30px;
 }
 
 .greeting{
@@ -245,9 +247,7 @@ a {
   margin-bottom: 30px;
   margin-top: 10px;
   padding: 5px;
-  background-color: rgba(25, 76, 51, 0.9);
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .9);
-  border: 1px rgba(25, 76, 51) solid;
+  
 }
 
 .genre {
