@@ -327,8 +327,7 @@ a {
   font-size:25px;
   text-align: center;
   color: black;
-  background-color:  rgba(127, 40, 41, 0.9);
-  border: 1px  rgba(127, 40, 41, 0.9) solid;
+
   border-radius: 100px;
   width: 400px;
  }
