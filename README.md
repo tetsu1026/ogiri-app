@@ -40,7 +40,7 @@ password:aaa111
 [![Image from Gyazo](https://i.gyazo.com/9e0f1daf37eccb530416e40f62095173.jpg)](https://gyazo.com/9e0f1daf37eccb530416e40f62095173)
 
 ## ログインページ
-[![Image from Gyazo](https://i.gyazo.com/bdd07407160084d12670e03754371fee.jpg)](https://gyazo.com/bdd07407160084d12670e03754371fee)
+[![Image from Gyazo](https://i.gyazo.com/f411e22e32cc25c3a581fbd155e8e6b6.jpg)](https://gyazo.com/f411e22e32cc25c3a581fbd155e8e6b6)
 
 ## 出題ページ
 [![Image from Gyazo](https://i.gyazo.com/9c8644e1f9ae811f455d16f1cf1ae516.jpg)](https://gyazo.com/9c8644e1f9ae811f455d16f1cf1ae516)
@@ -117,6 +117,15 @@ password:aaa111
 ・日常生活ではあまりできない大喜利に参加したい  
 ・「お題」「回答」「判定」参加方法が選べる  
 
+# 開発環境
+・VScode
+・Ruby 2.6.5
+・Rails 6.0.3.4
+・Mysql 0.4.4
+・gem 3.0.3
+・Heroku 7.47.11
+
+# DB設計
 
 # ユーザー管理機能
 ・usersテーブル
