@@ -192,6 +192,7 @@ password:aaa111
 | user      | references | null: false, foreign_key: true |
 | post      | references | null: false, foreign_key: true |
 
+### Association
 - belongs_to :user
 - belongs_to :post
 - has_many :likes
@@ -206,6 +207,7 @@ password:aaa111
 | post      | references | null: false, foreign_key: true |
 | comment   | references | null: false, foreign_key: true |
 
+### Association
 - belongs_to :user
 - belongs_to :post
 - belongs_to :comment
@@ -218,7 +220,7 @@ password:aaa111
 | user      | references | null: false, foreign_key: true |
 | post      | references | null: false, foreign_key: true |
 
-
+### Association
 - belongs_to :user
 - belongs_to :post
 
