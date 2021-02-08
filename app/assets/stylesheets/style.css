@@ -124,19 +124,21 @@ a {
   margin-top:5px;
   margin-bottom: 5px;
   margin-left: 740px;
-  border-radius: 50%;  
-  width: 180px;       
-  height: 180px;  
+  border-radius: 50%;
+  width: 180px; 
+  height: 180px;
   background-position: left top;
-  display: inline-block;    
+  display: inline-block;
 }
 
 
-.head_alt{
+
+
+.head_alt {
   display: block;
   margin-left: 705px;
   font-weight: bold;
-  color:  #FFFF66;
+  color: #FFFF66;
 }
 
 .head_alt:hover{
