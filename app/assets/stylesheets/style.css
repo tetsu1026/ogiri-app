@@ -125,16 +125,12 @@ a {
   margin-bottom: 5px;
   margin-left: 740px;
   border-radius: 50%;
-  width: 180px; 
-  height: 180px;
   background-position: left top;
   display: inline-block;
 }
 
 
-
-
-.head_alt {
+.head_alt{
   display: block;
   margin-left: 705px;
   font-weight: bold;
@@ -677,6 +673,7 @@ a {
 }
 
 /* お気に入り投稿一覧*/
+
 
 .likes_lists{
   list-style-type: square;
