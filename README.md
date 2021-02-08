@@ -29,17 +29,39 @@
 email:test1@test  
 password:aaa111
 
-ユーザー2 nickname:test2  
-email:test2@test  
-password:aaa222  
-
-ユーザー3 nickname:test3  
-email:test3@test  
-password:aaa333  
-
 # DEMO
 ## ログイン前のトップページ
 [![Image from Gyazo](https://i.gyazo.com/9a4f0d0a60b94b939e5c679d51360f29.jpg)](https://gyazo.com/9a4f0d0a60b94b939e5c679d51360f29)
+
+## ログイン済みトップページ
+[![Image from Gyazo](https://i.gyazo.com/7c920b1b697a7507b47bf24b73c29b59.jpg)](https://gyazo.com/7c920b1b697a7507b47bf24b73c29b59)
+
+## 新規登録ページ
+[![Image from Gyazo](https://i.gyazo.com/9e0f1daf37eccb530416e40f62095173.jpg)](https://gyazo.com/9e0f1daf37eccb530416e40f62095173)
+
+## ログインページ
+[![Image from Gyazo](https://i.gyazo.com/bdd07407160084d12670e03754371fee.jpg)](https://gyazo.com/bdd07407160084d12670e03754371fee)
+
+## 出題ページ
+[![Image from Gyazo](https://i.gyazo.com/9c8644e1f9ae811f455d16f1cf1ae516.jpg)](https://gyazo.com/9c8644e1f9ae811f455d16f1cf1ae516)
+
+## トップページ/投稿されたお題一覧
+[![Image from Gyazo](https://i.gyazo.com/b5598a34e7d41357837f5ad80030dd86.jpg)](https://gyazo.com/b5598a34e7d41357837f5ad80030dd86)
+
+## トップページ/お題のランキング表
+[![Image from Gyazo](https://i.gyazo.com/7a12db53565b2aec1f9615bd01410191.jpg)](https://gyazo.com/7a12db53565b2aec1f9615bd01410191)
+
+## お題回答ページ上部/お題タイトル、投稿者回答
+[![Image from Gyazo](https://i.gyazo.com/b63f891134d72fa054123b2a86d57f00.jpg)](https://gyazo.com/b63f891134d72fa054123b2a86d57f00)
+
+## お題回答ページ下部/ランキング表、回答一覧
+[![Image from Gyazo](https://i.gyazo.com/a24ce61caceecdedced13b4f2758a699.jpg)](https://gyazo.com/a24ce61caceecdedced13b4f2758a699)
+
+## マイページ上部/ユーザー情報
+[![Image from Gyazo](https://i.gyazo.com/1a1499b3a2456a8e46550bd9feddda4f.jpg)](https://gyazo.com/1a1499b3a2456a8e46550bd9feddda4f)
+
+## マイページ下部/好きな投稿一覧、ユーザーの投稿一覧
+[![Image from Gyazo](https://i.gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1.jpg)](https://gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1)
 
 # 利用方法
 ### ログイン

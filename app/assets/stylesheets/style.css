@@ -143,6 +143,12 @@ a {
   color: #770000;
 }
 
+/*新規登録・ログイン*/
+
+.page-heading{
+  color: #000000;
+}
+
 /* フォーム周り */
 .form__wrapper{
   min-height: calc(100vh - 161px);
@@ -154,6 +160,7 @@ a {
 
 .form__text_1 {
   font-weight: bold;
+  color: #000000;
 }
 
 .field{
@@ -430,16 +437,15 @@ a {
 
 .comment_message {
   display: inline-block;
-  margin-top: 5px;
   color: #CCCC00;
-  margin-bottom: 5px;
+  margin: 10px 0 10px 15px;
 }
 
-.comment_user{
+.comment_user {
   font-size: 16px;
   color: #ffffff;
   text-decoration: underline;
-  margin-left: 20px; 
+  margin-left: 5px; 
   margin-right: 5px;
 }
 
@@ -473,8 +479,8 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
+  background: #0000FF;
+  border: 1px #0000FF solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -493,6 +499,16 @@ a {
   text-align: center ;
   color: black;
  }
+
+ .comment_card__img {
+  display: inline-block;
+  border: 2px  rgba(25, 76, 51, 0.9) solid;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
 /* コメントランキング表*/

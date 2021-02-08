@@ -2,7 +2,7 @@
   <%= render partial: "posts/header"%>
   <div class="inner_login">
     <div class="form__wrapper">
-      <h2 class="page-heading">ユーザー新規登録</h2>
+      <h2 class="page-heading">新規登録</h2>
 
         <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。%>
         <%# 「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
@@ -15,7 +15,7 @@
         </div>
 
         <div class="field">
-          <%= f.label :password, "パスワード（6文字以上）", class: :form__text_1 %><br />
+          <%= f.label :password, "パスワード（半角英数混合6文字以上）", class: :form__text_1 %><br />
           <%= f.password_field :password, autocomplete: "new-password" %>
         </div>
 

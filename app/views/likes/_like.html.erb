@@ -1,4 +1,9 @@
 <div class="comments_list">
+<% if comment.user.image.present?%>
+<%= image_tag comment.user.image.variant(resize: '55x55'), class: 'comment_card__img' if comment.user.image.attached? %>
+<% else %>
+<i class="fas fa-user-alt user_comment"></i>
+<% end %>
   <div class="comment_message">
    <%= comment.message %>
   </div>
