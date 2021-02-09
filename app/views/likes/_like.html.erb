@@ -1,4 +1,5 @@
 <div class="comments_list">
+<div class="comment_all">
 <% if comment.user.image.present?%>
 <%= image_tag comment.user.image.variant(resize: '55x55'), class: 'comment_card__img' if comment.user.image.attached? %>
 <% else %>
@@ -23,4 +24,5 @@
   <% else %>
       <i class="fas fa-grin-squint-tears unlike-btn"></i><p class="count"><%= comment.likes.count %></p>
   <% end %>
+  </div>
 </div>
