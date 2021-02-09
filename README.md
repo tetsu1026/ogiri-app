@@ -56,7 +56,7 @@ password:aaa111
 [![Image from Gyazo](https://i.gyazo.com/1b535e54545907c1faf77e16ce52ac4b.jpg)](https://gyazo.com/1b535e54545907c1faf77e16ce52ac4b)
 
 ## お題回答ページ下部/回答一覧
-[![Image from Gyazo](https://i.gyazo.com/adb38dc12722289910e495c0eaeab794.jpg)](https://gyazo.com/adb38dc12722289910e495c0eaeab794)
+[![Image from Gyazo](https://i.gyazo.com/65ccdc1a56d179db9b217d666c34afbe.jpg)](https://gyazo.com/65ccdc1a56d179db9b217d666c34afbe)
 
 ## マイページ上部/ユーザー情報
 [![Image from Gyazo](https://i.gyazo.com/1a1499b3a2456a8e46550bd9feddda4f.jpg)](https://gyazo.com/1a1499b3a2456a8e46550bd9feddda4f)
