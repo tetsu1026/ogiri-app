@@ -137,7 +137,7 @@ password:aaa111
 ・VScode
 ・Ruby 2.6.5
 ・Rails 6.0.3.4
-・Mysql 0.4.4
+・Mysql2 0.4.4
 ・gem 3.0.3
 ・Heroku 7.47.11
 
