@@ -165,6 +165,10 @@ a {
   margin: 10px 0;
 }
 
+.comment__field{
+  margin: 30px 0;
+}
+
 .actions{
   margin-bottom: 40px;
 }
@@ -443,7 +447,7 @@ a {
   border: 1px rgba(25, 76, 51, 0.5) solid;
   border-radius: 100px;
   width: 900px;
-  margin: 15px auto;
+  margin: 0 auto;
 }
 
 .comment_user {
@@ -507,10 +511,15 @@ a {
 
  .comment_card__img {
   display: inline-block;
-  border-radius: 10px;
-  margin-top: 5px;
+  border-radius: 50%;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.image__comment {
+  position: relative;
+  top: 65px;
+  right: 25px;
 }
 
 

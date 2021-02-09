@@ -102,7 +102,7 @@
       
       <% if user_signed_in? %>
       <%= form_with model: [@post, @comment], local: true do |f|%>
-            <div class="field">
+            <div class="comment__field">
                <%= f.label :message, "回答する", class: :comment_word %><br />
                <%= f.text_field :message, class: :comment_field %>
             </div>
