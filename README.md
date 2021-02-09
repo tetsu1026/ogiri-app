@@ -52,11 +52,11 @@ password:aaa111
 ## トップページ/お題のランキング表
 [![Image from Gyazo](https://i.gyazo.com/7a12db53565b2aec1f9615bd01410191.jpg)](https://gyazo.com/7a12db53565b2aec1f9615bd01410191)
 
-## お題回答ページ上部/お題タイトル、投稿者回答
-[![Image from Gyazo](https://i.gyazo.com/b63f891134d72fa054123b2a86d57f00.jpg)](https://gyazo.com/b63f891134d72fa054123b2a86d57f00)
+## お題回答ページ上部/お題タイトル、投稿者回答、回答ランキング表
+[![Image from Gyazo](https://i.gyazo.com/1b535e54545907c1faf77e16ce52ac4b.jpg)](https://gyazo.com/1b535e54545907c1faf77e16ce52ac4b)
 
-## お題回答ページ下部/ランキング表、回答一覧
-[![Image from Gyazo](https://i.gyazo.com/a24ce61caceecdedced13b4f2758a699.jpg)](https://gyazo.com/a24ce61caceecdedced13b4f2758a699)
+## お題回答ページ下部/回答一覧
+[![Image from Gyazo](https://i.gyazo.com/adb38dc12722289910e495c0eaeab794.jpg)](https://gyazo.com/adb38dc12722289910e495c0eaeab794)
 
 ## マイページ上部/ユーザー情報
 [![Image from Gyazo](https://i.gyazo.com/1a1499b3a2456a8e46550bd9feddda4f.jpg)](https://gyazo.com/1a1499b3a2456a8e46550bd9feddda4f)
