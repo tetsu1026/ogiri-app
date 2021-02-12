@@ -32,7 +32,6 @@ RSpec.describe Post, type: :model do
       it "お題作成者の回答がないと投稿できない" do
         @post.sentence = nil
         @post.valid?
-        binding.pry
         expect(@post.errors.full_messages).to include("Sentence can't be blank")
       end
     end
