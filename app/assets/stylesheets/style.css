@@ -111,7 +111,7 @@ a {
 
 
 .head_name{
-  margin-left: 695px;
+  margin-left: 650px;
   font-weight: bold;
   color:  #FFFF66;
 }
@@ -123,7 +123,7 @@ a {
 .head_image{
   margin-top:5px;
   margin-bottom: 5px;
-  margin-left: 720px;
+  margin-left: 680px;
   border-radius: 50%;
   background-position: left top;
   display: inline-block;
