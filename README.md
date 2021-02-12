@@ -26,8 +26,8 @@
  (https://ogiri-app-1026.herokuapp.com/)
 
 # テスト用アカウント
-ユーザー名:test212  
-email:test@212  
+ユーザー名:test  
+email:test@test212  
 password:aaa111
 
 # DEMO
