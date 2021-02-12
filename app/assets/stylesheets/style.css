@@ -198,6 +198,12 @@ a {
   display: block;
 }
 
+/* エラーメッセージ */
+.error-message{
+  color: red;
+  font-weight: bold;
+}
+
 /* メイン */
 .main {
   background-image: url("main.png");

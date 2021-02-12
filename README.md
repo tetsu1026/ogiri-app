@@ -26,8 +26,8 @@
  (https://ogiri-app-1026.herokuapp.com/)
 
 # テスト用アカウント
-ユーザー1 nickname:test1  
-email:test1@test  
+ユーザー名:test212  
+email:test@212  
 password:aaa111
 
 # DEMO
@@ -134,19 +134,19 @@ password:aaa111
 
 
 # 開発環境
-・VScode
-・Ruby 2.6.5
-・Rails 6.0.3.4
-・Mysql2 0.4.4
-・gem 3.0.3
-・Heroku 7.47.11
+・VScode  
+・Ruby 2.6.5  
+・Rails 6.0.3.4  
+・Mysql2 0.4.4  
+・gem 3.0.3  
+・Heroku 7.47.11  
 
 # 追加予定機能
-・コメントの非同期通信
-・判定機能の非同期通信
-・フォロー機能
-・ユーザー情報編集機能
-・ユーザー情報削除機能
+・コメントの非同期通信  
+・判定機能の非同期通信  
+・フォロー機能  
+・ユーザー情報編集機能  
+・ユーザー情報削除機能  
 
 # DB設計
 
