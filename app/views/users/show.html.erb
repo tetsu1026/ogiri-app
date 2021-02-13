@@ -5,7 +5,7 @@
     <%if @user.image.present?%>
       <div class="user_image">
       <p class="pro_camera"><i class="fas fa-camera-retro camera"></i></p>
-      <p class="pro_image"><%= image_tag @user.image.variant(resize: '180x180'), class: 'card__img' if @user.image.attached? %></p>
+      <p class="pro_image"><%= image_tag @user.image.variant(resize: '180x180'), class: 'user__card__img' if @user.image.attached? %></p>
       </div>
       <% else %>
       <div class="user_image">
@@ -73,7 +73,8 @@
           <%=link_to 'お題に挑戦する', post_path(post.id), class: :answer_title %>
         </div>
       </div>
-        <p class="count"><i class="fas fa-grin-squint-tears unlike-btn"></i><%= post.post_likes.count %></p>
+        <i class="fas fa-grin-squint-tears unlike-btn"></i>
+        <p class="count"><%= post.post_likes.count %></p>
      </div>
       <% end %>
      </div>

@@ -462,8 +462,7 @@ a {
   font-size: 16px;
   color: #ffffff;
   text-decoration: underline;
-  margin-left: 5px; 
-  margin-right: 5px;
+  margin-left: 10px; 
 }
 
 .show__genre {
@@ -478,6 +477,7 @@ a {
   display: inline-block;
   color: #ffffff;
   margin-left: 5px;
+  margin-right: 5px;
   font-size: 20px;
 }
 
@@ -644,14 +644,14 @@ a {
 .name {
   display: flex;
   position: relative;
-  top: 160px;
+  top: 180px;
 }
 
 .profile{
   
   display: flex;
   position: relative;
-  top: 180px;
+  top: 200px;
 }
 
 .pro_camera {
@@ -692,6 +692,20 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.user__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  margin-top: 150px;
+}
+
+.user__card__img {
+  margin: auto;
+  border: 2px  rgba(25, 76, 51, 0.9) solid;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  border-radius: 50%;
 }
 
 /* お気に入り投稿一覧*/
