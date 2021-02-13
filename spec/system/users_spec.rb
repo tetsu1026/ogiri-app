@@ -32,5 +32,28 @@ RSpec.describe "Users", type: :system do
         expect(page).to have_no_content("新規登録")
       end
     end
+     
+    context "新規登録できない時" do
+      it "誤った情報では登録できないで新規登録ページに戻ってくる" do
+        # トップページに移動する
+        visit root_path
+        # トップページに新規登録ボタンがあることを確認する
+        expect(page).to have_content("新規登録")
+        # 新規登録ページに移動する
+        visit new_user_registration_path
+        # ユーザー情報を登録する
+        fill_in "メールアドレス", with: ""
+        fill_in "パスワード（半角英数混合6文字以上）", with: "", match: :first
+        fill_in "パスワード再入力", with: "", match: :first
+        fill_in "nickname", with: ""
+        fill_in "プロフィール（自分を一言で表現してください）", with: ""
+        # 新規登録ボタンをクリックするとユーザーカウントが上がらないことを確認する
+        expect{
+          find('input[name="commit"]').click
+        }.to change { User.count }.by(0)
+        # 新規登録ページに戻されることを確認する
+        expect(current_path).to eq('/users')
+      end
+    end
   end
 end
