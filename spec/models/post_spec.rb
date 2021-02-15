@@ -24,7 +24,7 @@ RSpec.describe Post, type: :model do
         @post.valid?
         expect(@post.errors.full_messages).to include("Title can't be blank")
       end
-      it "ジャンルの選択がされてうないと投稿できない" do
+      it "ジャンルの選択がされていないと投稿できない" do
         @post.genre_id = 1
         @post.valid?
         expect(@post.errors.full_messages).to include("Genre Select")
