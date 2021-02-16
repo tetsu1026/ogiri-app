@@ -32,4 +32,13 @@ RSpec.describe "Posts", type: :system do
     expect(page).to have_content(@post.title)
     end
   end
+
+  context "お題投稿ができない時" do
+    it "ログインしていないと出題ページに遷移できない" do
+    # トップページに遷移する
+    visit root_path
+    # 出題ページへのリンクがない
+    expect(page).to have_no_content("出題する")
+    end
+  end
 end
