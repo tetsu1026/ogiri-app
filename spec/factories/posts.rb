@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :post do
-    title       {"こんな◯◯は嫌だ"}
+    title       {Faker::Lorem.sentence}
     sentence    {"testtest"}
     genre_id    {2}
 
