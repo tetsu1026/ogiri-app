@@ -48,6 +48,7 @@ RSpec.describe "編集する", type: :system do
     @post1 = FactoryBot.create(:post)
     @post2 = FactoryBot.create(:post)
   end
+
   context "お題が編集できる時" do
     it "ログインしたユーザーは自分が投稿したお題を編集できる" do
     # 投稿1のユーザーでログインする
@@ -86,4 +87,21 @@ RSpec.describe "編集する", type: :system do
     expect(page).to have_content("#{@post1.sentence}+編集した投稿者の回答")
     end
   end
+
+  context "お題編集できない時" do
+    it "ログインしたユーザーは自分の投稿以外は編集できない" do
+      # 投稿1のユーザーでログインする
+      visit new_user_session_path
+      fill_in "メールアドレス", with: @post1.user.email
+      fill_in "パスワード（半角英数混合6文字以上）", with: @post1.user.password
+      find('input[name="commit"]').click
+      expect(current_path).to eq(root_path)
+      # 投稿2のユーザーの詳細ページに遷移する
+      visit post_path(@post2)
+      # 投稿2に編集ページがないことを確認する
+      expect(page).to have_no_content("編集する")
+    end
+  end
 end
+
+
