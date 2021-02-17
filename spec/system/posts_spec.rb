@@ -168,5 +168,15 @@ RSpec.describe "詳細表示", type: :system do
   # お題詳細に回答formが存在する
   expect(page).to have_selector 'form'
   end
+
+  it "ログインしていない状態でお題詳細ページに遷移できるものの回答投稿formが存在しない" do
+  # 詳細ページに遷移する
+  visit post_path(@post)
+  # 詳細にお題と投稿者の回答があるかを確認する
+  expect(page).to have_content("#{@post.title}")
+  expect(page).to have_content("#{@post.sentence}")
+  # formが存在しないことを確認する
+  expect(page).to have_no_selector 'form'
+  end
 end
 
