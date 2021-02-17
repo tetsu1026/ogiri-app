@@ -423,6 +423,12 @@ a {
   background:#770000;
 }
 
+.login_alt{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
 
 .comments_lists{
   padding-left: 20px;

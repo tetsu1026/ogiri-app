@@ -25,14 +25,12 @@
 
 .crown{
   color: #CCCC00;
-  margin-left:5px;
-  margin-right: 5px;
+  margin: 0 10px;
 }
 
 .light {
   color: #CCCC00;
-  margin-left:5px;
-  margin-right: 5px;
+  margin: 0 10px;
 }
 
 .pencil {
@@ -63,17 +61,14 @@
 
 .heart {
   color:#CCCC00;
-  margin-left:5px;
-  margin-right: 5px;
+  margin: 0 10px;
 }
 
 .alt_user {
   display: inline-block;
   font-size: 60px;
   color: #00FFFF;
-  margin-top:20px;
-  margin-bottom: 5px;
-  margin-left: 750px;
+  margin: 20px 0 5px 750px;
 }
 
 .user_comment {
@@ -81,4 +76,10 @@
   font-size: 35px;
   margin: 10px 5px 0 15px;
   color: #00FFFF;
+}
+
+.exclamation{
+  margin: 0 10px;
+  font-size: 20px;
+  color: red;
 }
