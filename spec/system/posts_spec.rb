@@ -177,6 +177,8 @@ RSpec.describe "詳細表示", type: :system do
   expect(page).to have_content("#{@post.sentence}")
   # formが存在しないことを確認する
   expect(page).to have_no_selector 'form'
+  # 「回答するにはログインが必要です」が表示されていることを確認する
+  expect(page).to have_content("回答するにはログインが必要です")
   end
 end
 
