@@ -149,3 +149,24 @@ RSpec.describe "削除する", type: :system do
   end
 end
 
+RSpec.describe "詳細表示", type: :system do
+  before do
+    @post = FactoryBot.create(:post)
+  end
+  it "ログインしたユーザーは詳細ページに遷移した時回答投稿が表示される" do
+  # ログインする
+  visit new_user_session_path
+  fill_in "メールアドレス", with: @post.user.email
+  fill_in "パスワード（半角英数混合6文字以上）", with: @post.user.password
+  find('input[name="commit"]').click
+  expect(current_path).to eq(root_path)
+  # お題詳細ページに遷移する
+  visit post_path(@post)
+  # 詳細にお題と投稿者の回答があるかを確認する
+  expect(page).to have_content("#{@post.title}")
+  expect(page).to have_content("#{@post.sentence}")
+  # お題詳細に回答formが存在する
+  expect(page).to have_selector 'form'
+  end
+end
+
