@@ -112,7 +112,7 @@ RSpec.describe "削除する", type: :system do
 
   context "お題の削除ができる時" do
     it "ログインしたユーザーは自ら投稿したお題を削除できる" do
-    # 投稿1のユーザーでログインする
+    # お題1のユーザーでログインする
     visit new_user_session_path
     fill_in "メールアドレス", with: @post1.user.email
     fill_in "パスワード（半角英数混合6文字以上）", with: @post1.user.password
@@ -122,7 +122,7 @@ RSpec.describe "削除する", type: :system do
     visit post_path(@post1)
     # 削除ボタンがあることを確認する
     expect(page).to have_content("削除する")
-    # 投稿を削除するとレコードカウントが1つ下がることを確認する
+    # お題を削除するとレコードカウントが1つ下がることを確認する
     expect{
     find_link("削除する", href: post_path(@post1)).click
     }.to change {Post.count}.by(-1)
@@ -131,6 +131,21 @@ RSpec.describe "削除する", type: :system do
     # トップページにお題1がないことを確認する
     expect(page).to have_no_content("#{@post1.title}")
     end
+  end
+
+  context "お題の削除ができない時" do
+    it "ログインしたユーザーは自分の投稿以外削除できない" do
+    # お題1のユーザーでログインする
+    visit new_user_session_path
+    fill_in "メールアドレス", with: @post1.user.email
+    fill_in "パスワード（半角英数混合6文字以上）", with: @post1.user.password
+    find('input[name="commit"]').click
+    expect(current_path).to eq(root_path)
+    # お題2の詳細ページに遷移する
+    visit post_path(@post2)
+    # 削除ボタンがないことを確認する
+    expect(page).to have_no_content("削除する")
+   end
   end
 end
 
