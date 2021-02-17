@@ -1,0 +1,39 @@
+<div class="main">
+  <%= render partial: "posts/header"%>
+  <div class="inner_login">
+    <div class="form__wrapper">
+      <h2 class="page-heading">ユーザー情報編集</h2>
+
+        <%= form_with model: @user, url: user_path(@user.id), local: true do |f| %>
+        <%= render 'posts/error', model: f.object %>
+
+        <div class="field">
+          <%= f.label :email, "メールアドレス", class: :form__text_1 %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+
+        <div class="field">
+        <%= f.label :image, "プロフィール写真" ,class: :form__text_1 %><br />
+        <%= f.file_field :image %>
+        </div>
+
+        <div class="field">
+          <%= f.label :nickname, "nickname",class: :form__text_1 %><br />
+          <%= f.text_field :nickname %>
+        </div>
+
+        <div class="field">
+          <%= f.label :profile, "プロフィール（自分を一言で表現してください）" ,class: :form__text_1 %><br />
+          <%= f.text_area :profile, class: :form__text %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "更新する", class: :form__btn  %>
+        </div>
+        <div class="post__manage">
+        <%= link_to "退会する", user_path(@user.id), method: :delete, class: :post__btn %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

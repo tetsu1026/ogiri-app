@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
+
   root to: 'posts#index'
-  resources :users, only: :show
+  resources :users, only: [:show, :edit, :update, :destroy]
   resources :posts do
     resources :post_likes, only: [:create, :destroy]
     resources :comments, only: :create do

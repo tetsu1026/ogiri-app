@@ -702,9 +702,9 @@ a {
 
 .user__manage{
   display: flex;
-  justify-content: center;
   padding-top: 16px;
-  margin-top: 150px;
+  position: relative;
+  top: 140px;
 }
 
 .user__card__img {

@@ -2,6 +2,11 @@
   <%= render partial: "posts/header"%>
   <div class="user_show_inner">
     <div class="user__wrapper">
+    <% if user_signed_in? && current_user.id == @user.id %>
+        <div class="user__manage">
+          <%= link_to "マイページ編集", edit_user_registration_path(@user.id), class: :post__btn %>
+        </div>
+    <% end %>
     <%if @user.image.present?%>
       <div class="user_image">
       <p class="pro_camera"><i class="fas fa-camera-retro camera"></i></p>
