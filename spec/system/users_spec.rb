@@ -150,4 +150,18 @@ RSpec.describe "編集する", type: :system do
     expect(page).to have_content("#{@user1.profile}+編集したプロフィール")
     end 
   end
+  context "ユーザー情報が編集できない時" do
+    it "ログインしたユーザーは自分以外のマイページは編集できない" do
+    # ユーザー1でログインする
+    visit new_user_session_path
+    fill_in "メールアドレス", with: @user1.email
+    fill_in "パスワード（半角英数混合6文字以上）", with: @user1.password
+    find('input[name="commit"]').click
+    expect(current_path).to eq(root_path)
+    # ユーザー2のマイページに遷移する
+    visit user_path(@user2)
+    # ユーザー2のマイページに編集ボタンがないことを確認する
+    expect(page).to have_no_content("編集する")
+    end
+  end
 end
