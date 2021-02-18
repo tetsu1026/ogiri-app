@@ -59,10 +59,13 @@ password:aaa111
 [![Image from Gyazo](https://i.gyazo.com/65ccdc1a56d179db9b217d666c34afbe.jpg)](https://gyazo.com/65ccdc1a56d179db9b217d666c34afbe)
 
 ## マイページ上部/ユーザー情報
-[![Image from Gyazo](https://i.gyazo.com/1a1499b3a2456a8e46550bd9feddda4f.jpg)](https://gyazo.com/1a1499b3a2456a8e46550bd9feddda4f)
+[![Image from Gyazo](https://i.gyazo.com/a01309e632c403c09b4cd7854f0e605b.jpg)](https://gyazo.com/a01309e632c403c09b4cd7854f0e605b)
 
 ## マイページ下部/好きな投稿一覧、ユーザーの投稿一覧
 [![Image from Gyazo](https://i.gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1.jpg)](https://gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1)
+
+## ユーザー情報編集・退会ページ
+[![Image from Gyazo](https://i.gyazo.com/6414265c99554633fd5c9ce3b3050a5e.jpg)](https://gyazo.com/6414265c99554633fd5c9ce3b3050a5e)
 
 # 利用方法
 ### ログイン
@@ -126,6 +129,7 @@ password:aaa111
 | お題詳細機能        | お題詳細ページより、回答ができる                                      |
 | お題編集削除機能     | 投稿者のみお題の編集・削除ができる                                    |
 | ユーザー詳細表示機能  | 各ユーザーのプロフィール、投稿一覧、「面白いと判定した投稿一覧」が見れる    |
+| ユーザー編集・削除機能 | 本人のみプロフィール情報の編集や退会ができる                           |
 | 回答機能            | お題詳細ページから回答が行える、回答するとプロフィール写真と名前が表示される |
 | 回答判定機能         | 回答の隣にある、絵文字をクリックするとカウントが1つ上がる、削除も可能      |
 | お題判定機能         | 投稿されているお題の絵文字をクリックすると、カウントが1つ上がる、削除も可能 |
@@ -145,8 +149,6 @@ password:aaa111
 ・コメントの非同期通信  
 ・判定機能の非同期通信  
 ・フォロー機能  
-・ユーザー情報編集機能  
-・ユーザー情報削除機能  
 
 # DB設計
 
