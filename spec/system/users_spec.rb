@@ -165,3 +165,32 @@ RSpec.describe "編集する", type: :system do
     end
   end
 end
+
+RSpec.describe "退会する", type: :system do
+  before do
+    @user1 = FactoryBot.create(:user)
+  end
+
+  context "ユーザーが退会できる時" do
+    it "ログインしたユーザーは本人だった場合退会ができる" do
+    # ログインする
+    visit new_user_session_path
+    fill_in "メールアドレス", with: @user1.email
+    fill_in "パスワード（半角英数混合6文字以上）", with: @user1.password
+    find('input[name="commit"]').click
+    expect(current_path).to eq(root_path)
+    # マイページに遷移する
+    visit user_path(@user1)
+    # マイページに編集するボタンがあることを確認する
+    expect(page).to have_content("編集する")
+    # 編集ページに遷移する
+    visit edit_user_registration_path(@user1)
+    # 編集ページに退会ボタンがあることを確認する
+    expect(page).to have_content("退会する")
+    # 退会するとレコードカウントが1つ下がることを確認する
+    expect{
+      find_link("退会する", href: user_path(@user1)).click
+    }.to change {User.count}.by(-1)
+    end
+  end
+end
