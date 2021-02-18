@@ -405,6 +405,7 @@ a {
   justify-content: center;
   padding-top: 16px;
 }
+
 .post__btn{
   display: block;
   padding: 8px 32px;
@@ -705,6 +706,7 @@ a {
   padding-top: 16px;
   position: relative;
   top: 140px;
+  left: 1000px;
 }
 
 .user__card__img {
@@ -713,6 +715,23 @@ a {
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
   border-radius: 50%;
 }
+
+/* ユーザー編集ページ */
+
+.out__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.out_alt{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
 
 /* お気に入り投稿一覧*/
 

@@ -30,7 +30,13 @@
         <div class="actions">
           <%= f.submit "更新する", class: :form__btn  %>
         </div>
-        <div class="post__manage">
+        
+        <p class="out_alt">
+        <i class="fas fa-exclamation exclamation"></i>
+         退会される方は下記のボタンをクリックして下さい
+        <i class="fas fa-exclamation exclamation"></i></p>
+
+        <div class="out__manage">
         <%= link_to "退会する", user_path(@user.id), method: :delete, class: :post__btn %>
         </div>
       <% end %>
