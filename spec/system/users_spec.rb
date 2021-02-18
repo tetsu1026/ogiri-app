@@ -104,3 +104,50 @@ RSpec.describe 'ログイン', type: :system do
     end
   end
 end
+
+RSpec.describe "編集する", type: :system do
+  before do
+    @user1 = FactoryBot.create(:user)
+    @user2 = FactoryBot.create(:user)
+  end
+
+  context "ユーザー情報が編集できる時" do
+    it "ログインしたユーザーは自分のプロフィールを編集できる" do
+    # ユーザー1でログインする
+    visit new_user_session_path
+    fill_in "メールアドレス", with: @user1.email
+    fill_in "パスワード（半角英数混合6文字以上）", with: @user1.password
+    find('input[name="commit"]').click
+    expect(current_path).to eq(root_path)
+    # マイページに遷移する
+    visit user_path(@user1)
+    # マイページに編集するボタンがあることを確認する
+    expect(page).to have_content("編集する")
+    # 編集ページに遷移する
+    visit edit_user_registration_path(@user1)
+    # すでにユーザー情報が入っているかを確認する
+    expect(
+      find('#user_email').value
+    ).to eq"#{@user1.email}"
+    expect(
+      find('#user_nickname').value
+    ).to eq(@user1.nickname)
+    expect(
+      find('#user_profile').value
+    ).to eq(@user1.profile)
+    # プロフィール内容を変更する
+    fill_in "user[email]", with: "#{@user1.email}test"
+    fill_in "user[nickname]", with: "#{@user1.nickname}+編集したニックネーム"
+    fill_in "user[profile]", with: "#{@user1.profile}+編集したプロフィール"
+    # 編集してもユーザーカウントが上がらないことを確認する
+    expect {
+      find('input[name="commit"]').click
+    }.to change {User.count}.by(0)
+    # マイページに遷移したことを確認する
+    visit user_path(@user1)
+    # 先ほどの変更内容があるか確認する
+    expect(page).to have_content("#{@user1.nickname}+編集したニックネーム")
+    expect(page).to have_content("#{@user1.profile}+編集したプロフィール")
+    end 
+  end
+end
