@@ -31,40 +31,40 @@ email:test@test212
 password:aaa111
 
 # 🗺 DEMO
-## ログイン前のトップページ
+## 🌐 ログイン前のトップページ
 [![Image from Gyazo](https://i.gyazo.com/9a4f0d0a60b94b939e5c679d51360f29.jpg)](https://gyazo.com/9a4f0d0a60b94b939e5c679d51360f29)
 
-## ログイン済みトップページ
+## 🌐 ログイン済みトップページ
 [![Image from Gyazo](https://i.gyazo.com/7c920b1b697a7507b47bf24b73c29b59.jpg)](https://gyazo.com/7c920b1b697a7507b47bf24b73c29b59)
 
-## 新規登録ページ
+## 🌐 新規登録ページ
 [![Image from Gyazo](https://i.gyazo.com/9e0f1daf37eccb530416e40f62095173.jpg)](https://gyazo.com/9e0f1daf37eccb530416e40f62095173)
 
-## ログインページ
+## 🌐 ログインページ
 [![Image from Gyazo](https://i.gyazo.com/f411e22e32cc25c3a581fbd155e8e6b6.jpg)](https://gyazo.com/f411e22e32cc25c3a581fbd155e8e6b6)
 
-## 出題ページ
+## 🌐 出題ページ
 [![Image from Gyazo](https://i.gyazo.com/9c8644e1f9ae811f455d16f1cf1ae516.jpg)](https://gyazo.com/9c8644e1f9ae811f455d16f1cf1ae516)
 
-## トップページ/投稿されたお題一覧
+## 🌐 トップページ/投稿されたお題一覧
 [![Image from Gyazo](https://i.gyazo.com/b5598a34e7d41357837f5ad80030dd86.jpg)](https://gyazo.com/b5598a34e7d41357837f5ad80030dd86)
 
-## トップページ/お題のランキング表
+## 🌐 トップページ/お題のランキング表
 [![Image from Gyazo](https://i.gyazo.com/7a12db53565b2aec1f9615bd01410191.jpg)](https://gyazo.com/7a12db53565b2aec1f9615bd01410191)
 
-## お題回答ページ上部/お題タイトル、投稿者回答、回答ランキング表
+## 🌐 お題回答ページ上部/お題タイトル、投稿者回答、回答ランキング表
 [![Image from Gyazo](https://i.gyazo.com/1b535e54545907c1faf77e16ce52ac4b.jpg)](https://gyazo.com/1b535e54545907c1faf77e16ce52ac4b)
 
-## お題回答ページ下部/回答一覧
+## 🌐 お題回答ページ下部/回答一覧
 [![Image from Gyazo](https://i.gyazo.com/65ccdc1a56d179db9b217d666c34afbe.jpg)](https://gyazo.com/65ccdc1a56d179db9b217d666c34afbe)
 
-## マイページ上部/ユーザー情報
-[![Image from Gyazo](https://i.gyazo.com/e45ebfc6928e64a999fb133d0584a5c4.gif)](https://gyazo.com/e45ebfc6928e64a999fb133d0584a5c4)
+## 🌐 マイページ上部/ユーザー情報
+[![Image from Gyazo](https://i.gyazo.com/9f0ed95260871d7b2a0393c56d19a8ed.jpg)](https://gyazo.com/9f0ed95260871d7b2a0393c56d19a8ed)
 
-## マイページ下部/好きな投稿一覧、ユーザーの投稿一覧
+## 🌐 マイページ下部/好きな投稿一覧、ユーザーの投稿一覧
 [![Image from Gyazo](https://i.gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1.jpg)](https://gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1)
 
-## ユーザー情報編集・退会ページ
+## 🌐 ユーザー情報編集・退会ページ
 [![Image from Gyazo](https://i.gyazo.com/6414265c99554633fd5c9ce3b3050a5e.jpg)](https://gyazo.com/6414265c99554633fd5c9ce3b3050a5e)
 
 # 📱 利用方法
