@@ -59,7 +59,7 @@ password:aaa111
 [![Image from Gyazo](https://i.gyazo.com/65ccdc1a56d179db9b217d666c34afbe.jpg)](https://gyazo.com/65ccdc1a56d179db9b217d666c34afbe)
 
 ## マイページ上部/ユーザー情報
-[![Image from Gyazo](https://i.gyazo.com/a01309e632c403c09b4cd7854f0e605b.jpg)](https://gyazo.com/a01309e632c403c09b4cd7854f0e605b)
+[![Image from Gyazo](https://i.gyazo.com/e45ebfc6928e64a999fb133d0584a5c4.gif)](https://gyazo.com/e45ebfc6928e64a999fb133d0584a5c4)
 
 ## マイページ下部/好きな投稿一覧、ユーザーの投稿一覧
 [![Image from Gyazo](https://i.gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1.jpg)](https://gyazo.com/7aee8e11f77b144485c14a6b72a9a0c1)
