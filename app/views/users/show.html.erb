@@ -2,9 +2,10 @@
   <%= render partial: "posts/header"%>
   <div class="user_show_inner">
     <div class="user__wrapper">
+    
     <% if user_signed_in? && current_user.id == @user.id %>
         <div class="user__manage">
-          <%= link_to "編集する", edit_user_registration_path(@user.id), class: :post__btn %>
+          <%= link_to "ユーザー情報編集", edit_user_registration_path(@user.id), class: :post__btn %>
         </div>
     <% end %>
     <%if @user.image.present?%>
@@ -28,6 +29,7 @@
         <p class="name__col1">一言プロフィール:</p>
         <p class="profile__col2"><%= @user.profile %></p>
       </div>
+      
       
       <h2 class="like-heading_user">
       <i class="fas fa-heartbeat heart"></i><%= "#{@user.nickname}さんの好きなお題"%><i class="fas fa-heartbeat heart"></i>

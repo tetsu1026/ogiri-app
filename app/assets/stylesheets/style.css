@@ -706,7 +706,6 @@ a {
   padding-top: 16px;
   position: relative;
   top: 140px;
-  left: 1000px;
 }
 
 .user__card__img {
@@ -748,6 +747,7 @@ a {
 .like_title {
   color: #CCCC00;
   margin-right: 5px;
+  padding: 5px 0;
   font-weight: bold;
 }
 
