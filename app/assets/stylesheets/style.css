@@ -403,7 +403,7 @@ a {
 .post__manage{
   display: flex;
   justify-content: center;
-  padding-top: 16px;
+  padding-top: 15px;
 }
 
 .post__btn{
