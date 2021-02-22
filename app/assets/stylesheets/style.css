@@ -374,8 +374,7 @@ a {
   text-align: left;
   text-decoration: underline;
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 10px 0 5px 0;
 }
 .post__image{
   width: 40%;
