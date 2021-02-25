@@ -20,8 +20,8 @@ RSpec.describe "出題する", type: :system do
     visit new_post_path
     # フォームを入力する
     select '文章問題', from: 'post[genre_id]'
-    fill_in 'post[title]', with: @post.title
-    fill_in 'post[sentence]', with: @post.sentence
+    fill_in 'お題', with: @post.title
+    fill_in '出題者の回答', with: @post.sentence
     # 出題するボタンをクリックするとPostモデルのカウントが1つ上がる
     expect {
       find('input[name="commit"]') .click
@@ -74,8 +74,8 @@ RSpec.describe "編集する", type: :system do
       find('#post_sentence').value
     ).to eq(@post1.sentence)
     # 投稿内容を編集する
-    fill_in "post[title]", with: "#{@post1.title}+編集したタイトル"
-    fill_in "post[sentence]", with: "#{@post1.sentence}+編集した投稿者の回答"
+    fill_in "お題", with: "#{@post1.title}+編集したタイトル"
+    fill_in "出題者の回答", with: "#{@post1.sentence}+編集した投稿者の回答"
     # 編集してもPostカウントが変わらないことを確認
     expect {
       find('input[name="commit"]').click
