@@ -1,7 +1,9 @@
 <main class="main">
   <%= render partial: "header"%>
   <div class="inner">
+  
   <h2 class="rank_title"><i class="fas fa-crown crown"></i>お題ポイントランキング<i class="fas fa-crown crown"></i></h2> 
+   
    <% if @post_like.present?%>
     <div class="index_ranking">
     <% like = 0 %>

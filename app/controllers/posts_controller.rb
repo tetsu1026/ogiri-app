@@ -45,6 +45,9 @@ class PostsController < ApplicationController
     end
   end
 
+  def indexabout
+  end
+
   private
 
   def post_params
