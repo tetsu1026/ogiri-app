@@ -32,7 +32,10 @@ password:aaa111
 
 # 🗺 DEMO
 ## 🌐 ログイン前のトップページ
-[![Image from Gyazo](https://i.gyazo.com/9a4f0d0a60b94b939e5c679d51360f29.jpg)](https://gyazo.com/9a4f0d0a60b94b939e5c679d51360f29)
+[![Image from Gyazo](https://i.gyazo.com/2314d12a0e3bfdc0c78f30e16007b87b.jpg)](https://gyazo.com/2314d12a0e3bfdc0c78f30e16007b87b)
+
+## 🌐 アプリケーション概要ページ
+[![Image from Gyazo](https://i.gyazo.com/8cac6cee3415ac5884a1247c91a6cb2f.jpg)](https://gyazo.com/8cac6cee3415ac5884a1247c91a6cb2f)
 
 ## 🌐 ログイン済みトップページ
 [![Image from Gyazo](https://i.gyazo.com/7c920b1b697a7507b47bf24b73c29b59.jpg)](https://gyazo.com/7c920b1b697a7507b47bf24b73c29b59)
@@ -70,8 +73,9 @@ password:aaa111
 # 📱 利用方法
 ### ログイン
 1.アクセスするとトップページに遷移  
-2.ヘッダー部分の「ログイン」をクリック  
-3.ログインページに遷移した上で、上記テスト用アカウントでログイン  
+2.「正解のない問題たちは?」のページに移ると内容が確認できます。
+3.ヘッダー部分の「ログイン」をクリック  
+4.ログインページに遷移した上で、上記テスト用アカウントでログイン  
 
 ### お題の投稿
 1.ヘッダー部分の「出題する」をクリックする  
