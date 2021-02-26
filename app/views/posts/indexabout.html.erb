@@ -1,22 +1,47 @@
 <main class="show_main">
    <%= render partial: "header"%>
   <div class="show_inner">
-    <h2 class="about_title">正解のない問題たちとは？</h2>
+    <h2 class="about_title"><i class="fas fa-pencil-alt pen"></i></i>正解のない問題たちとは？<i class="fas fa-pencil-alt pen"></i></i></h2>
     <div class="about_description">
-      <p>正解のない問題たちは、大喜利を通じて「発想力」を鍛えるアプリです。</p>
-      <p>このアプリの機能は以下の3つです。</p>
-      <p>① お題の投稿・・・お題を投稿することによって、0から1を生み出す力が鍛えられます。</p>
-      <p>② お題への回答・・・回答することにより、様々な視点が生まれ発想力がつきます。</p>
-      <p>③ お題や回答の判定・・・お題や回答は他のユーザーから評価されることによりどのくらい力がついたかわかります。</p>
-      <p>これら3つの機能を使って、楽しく発想力を鍛えましょう!!</p>
-      <p>また、大喜利なんて難しい・・・なんて思う方は、</p>
-      <p>いろんな方のお題や回答を見ることによって、考え方の視野が広がります！！</p>
-      <p>自分なりの使い方で大喜利を楽しんじゃいましょう！！</p>
+      <p class="about_text">正解のない問題たちは、大喜利を通じて「発想力」を鍛えるアプリです。</p>
+      <p class="about_text">このアプリの機能は以下の3つです。</p>
+      <p class="about_text">① お題の投稿・・・お題を投稿することによって、0から1を生み出す力が鍛えられます。</p>
+      <p class="about_text">② お題への回答・・・回答することにより、様々な視点が生まれ発想力がつきます。</p>
+      <p class="about_text">③ お題や回答の判定・・・お題や回答は他のユーザーから評価されることによりどのくらい力がついたかわかります。</p>
+      <p class="about_text">これら3つの機能を使って、楽しく発想力を鍛えましょう!!</p>
+      <p class="about_text">また、大喜利なんて難しい・・・なんて思う方は、</p>
+      <p class="about_text">いろんな方のお題や回答を見ることによって、考え方の視野が広がります！！</p>
+      <p class="about_text">自分なりの使い方で大喜利を楽しんじゃいましょう！！</p>
     </div>
-    <h2 class="about_title">使い方</h2>
-    <p>まずは、新規登録しましょう。</p>
-    <p>新規登録が済むと、お題投稿、お題回答、お題判定機能がお使いいただけます。
-    <p>お題の作成は、出題するをクリックいたします。</p>
-    <%= image_tag("odai.png", class: :odai) %>
+    <h2 class="about_title"><i class="fas fa-pencil-alt pen"></i>使い方  ~お題の投稿~<i class="fas fa-pencil-alt pen"></i></h2>
+    <div class="about_description">
+      <p class="about_text">まずは、新規登録しましょう。</p>
+      <p class="about_text">新規登録が済むと、お題投稿、お題回答、お題判定機能がお使いいただけます。
+      <p>お題の作成は、出題するをクリックいたします。</p>
+      <p class="about_text"><%= image_tag("odai.png", class: :odai) %></p>
+      <p class="about_text">ジャンルが選べます</p>
+      <p class="about_text">文章問題・・・文章でお題を投稿しましょう。   例：令和版「隣の芝生は青い」を教えて下さい</p>
+      <p class="about_text">写真にタイトルをつけてください・・・文章問題が難しい方はこちらを選択し、写真を針tけてください。</p>
+      <p class="about_text">お気に入りの写真にタイトルをつけてもらいましょう。</p>
+      <p class="about_text">例えばこんな風に・・・</p>
+      <p class="about_text"><%= image_tag("odai_image.png", class: :odai_image) %></p>
+      <p class="about_text">お題の選択が完了したら、あなた自身の回答を入力しましょう</p>
+      <p class="about_text">これで,投稿するをクリックしたら完了です！！</p>
+    </div>
+    <h2 class="about_title"><i class="fas fa-pencil-alt pen"></i></i>使い方  ~お題の回答~<i class="fas fa-pencil-alt pen"></i></h2>
+    <div class="about_description">
+      <p class="about_text">トップページの中から、好きなお題を選択し「お題に挑戦する」をクリックしましょう</p>
+      <p class="about_text">ページに移動したら、下記の回答フォームに回答を入力しましょう。</p>
+      <p class="about_text"><%= image_tag("answer.png", class: :answer) %></p>
+      <p class="about_text">回答するをクリックすれば完了です！！</p>
+    </div>
+    <h2 class="about_title"><i class="fas fa-pencil-alt pen"></i></i>使い方  ~お題・回答の判定~<i class="fas fa-pencil-alt pen"></i></h2>
+      <div class="about_description">
+      <p class="about_text">お題や回答の判定は、「<i class="far fa-grin-squint-tears like-btn"></i>」 このマークをクリックしてください。</p>
+      <p>判定は1人1回しかできません</p>
+      <p class="about_text">もう一度判定ボタンをクリックすると取り消されます。</p>
+      <p class="about_text">また、お題や回答は判定数に応じて、ランキングがつきます</p>
+      <p class="about_text">上位を目指してがんばりましょう！！</p>
+    </div>
   <div>
 </main>

@@ -348,11 +348,32 @@ a {
   text-align: center;
   font-weight: bold;
   color: #FFFF66;
+  margin: 10px 0;
 }
 
 .about_description {
   background-color: rgba(25, 76, 51, 0.5);
+  padding: 10px 10px;
   color: #FFFF66;
+}
+
+.about_text {
+  margin: 10px 0;
+}
+
+.odai {
+  height: 300px;
+  width: 300px;
+}
+
+.odai_image {
+  height: 300px;
+  width: 300px;
+}
+
+.answer {
+  height: 300px;
+  width: 300px;
 }
 
 /* 詳細ページ */
