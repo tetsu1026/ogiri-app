@@ -514,7 +514,8 @@ a {
 .count {
   display: inline-block;
   color: #ffffff;
-  margin: 0 5px 0 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-size: 20px;
 }
 
