@@ -81,7 +81,6 @@ RSpec.describe User, type: :model do
       it "profileがないと登録できない" do
         @user.profile = ""
         @user.valid?
-        binding.pry
         expect(@user.errors.full_messages).to include("Profile can't be blank")
       end
     end
