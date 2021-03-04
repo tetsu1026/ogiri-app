@@ -87,6 +87,7 @@ RSpec.describe 'ログイン', type: :system do
       # トップページに新規登録ボタンやログインボタンがないことを確認する
       expect(page).to have_no_content("ログイン")
       expect(page).to have_no_content("新規登録")
+      expect(page).to have_no_content("正解のない問題たちとは?")
     end
   end
   context "ログインできない時" do
