@@ -30,6 +30,9 @@ RSpec.describe "Users", type: :system do
         # トップページに新規登録ボタンやログインボタンがないことを確認する
         expect(page).to have_no_content("ログイン")
         expect(page).to have_no_content("新規登録")
+        # トップページにログアウトと出題するボタンがあることを確認する
+        expect(page).to have_content("ログアウト")
+        expect(page).to have_content("出題する")
       end
     end
      
