@@ -125,7 +125,7 @@ RSpec.describe "編集する", type: :system do
     # マイページに遷移する
     visit user_path(@user1)
     # マイページに編集するボタンがあることを確認する
-    expect(page).to have_content("編集する")
+    expect(page).to have_content("ユーザー情報編集")
     # 編集ページに遷移する
     visit edit_user_registration_path(@user1)
     # すでにユーザー情報が入っているかを確認する
@@ -164,7 +164,7 @@ RSpec.describe "編集する", type: :system do
     # ユーザー2のマイページに遷移する
     visit user_path(@user2)
     # ユーザー2のマイページに編集ボタンがないことを確認する
-    expect(page).to have_no_content("編集する")
+    expect(page).to have_no_content("ユーザー情報編集")
     end
   end
 end
@@ -185,7 +185,7 @@ RSpec.describe "退会する", type: :system do
     # マイページに遷移する
     visit user_path(@user1)
     # マイページに編集するボタンがあることを確認する
-    expect(page).to have_content("編集する")
+    expect(page).to have_content("ユーザー情報編集")
     # 編集ページに遷移する
     visit edit_user_registration_path(@user1)
     # 編集ページに退会ボタンがあることを確認する
