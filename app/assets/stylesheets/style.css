@@ -331,6 +331,7 @@ a {
   border-radius: 100px;
 }
 
+
 .question_main {
   margin: 230px auto 15px;
   font-size:25px;
@@ -341,6 +342,33 @@ a {
   border-radius: 100px;
   width: 400px;
  }
+
+/* 出題するボタン */
+
+ .question-btn {
+  width: 120px;
+  background: rgba(25, 76, 51, 0.9);
+  text-align: center;
+  border-radius: 4%;
+  bottom: 102px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.question-btn-text {
+  color: #CCCC00;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.question-btn-icon {
+  width: 60%;
+}
+
 
 /* 正解のない問題たちとは */
 

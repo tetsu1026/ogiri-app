@@ -70,3 +70,7 @@
     </div>
   </div>
 </main>
+<%= link_to(new_post_path, class: 'question-btn') do %>
+  <span class='question-btn-text'>出題する</span>
+  <%= image_tag 'pen.png' , size: '185x50' ,class: "question-btn-icon" %>
+<% end %>
