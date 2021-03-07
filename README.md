@@ -38,7 +38,7 @@ password:aaa111
 [![Image from Gyazo](https://i.gyazo.com/8cac6cee3415ac5884a1247c91a6cb2f.jpg)](https://gyazo.com/8cac6cee3415ac5884a1247c91a6cb2f)
 
 ## 🌐 ログイン済みトップページ
-[![Image from Gyazo](https://i.gyazo.com/7c920b1b697a7507b47bf24b73c29b59.jpg)](https://gyazo.com/7c920b1b697a7507b47bf24b73c29b59)
+[![Image from Gyazo](https://i.gyazo.com/3a775b2ed4c03077f8897b7a75d474de.jpg)](https://gyazo.com/3a775b2ed4c03077f8897b7a75d474de)
 
 ## 🌐 新規登録ページ
 [![Image from Gyazo](https://i.gyazo.com/9e0f1daf37eccb530416e40f62095173.jpg)](https://gyazo.com/9e0f1daf37eccb530416e40f62095173)
@@ -78,7 +78,8 @@ password:aaa111
 4.ログインページに遷移した上で、上記テスト用アカウントでログイン  
 
 ### お題の投稿
-1.ヘッダー部分の「出題する」をクリックする  
+1.ログイン後のトップページ画面右下に表示されている  
+  「出題する」をクリックする  
 2.新規お題作成ページに遷移した上で、下記を入力する  
   ・「写真にタイトルをつける」の場合  
     ①ジャンルで「写真にタイトルを付ける」を選択  
