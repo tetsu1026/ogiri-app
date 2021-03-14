@@ -630,8 +630,7 @@ a {
 
 .point_title {
   text-align: center;
-  margin-top:15px;
-  margin-bottom:15px;
+  margin: 15px 0 15px 0;
   color: black;
 }
 
