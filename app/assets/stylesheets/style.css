@@ -584,8 +584,7 @@ a {
  .comment_card__img {
   display: inline-block;
   border-radius: 50%;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px 0 10px;
 }
 
 .image__comment {
