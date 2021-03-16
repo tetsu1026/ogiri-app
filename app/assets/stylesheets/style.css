@@ -819,8 +819,7 @@ a {
 .like_sentence {
   display: inline-block;
   color: #CCCC00;
-  margin-right: 5px;
-  margin-bottom: 30px;
+  margin: 0 5px 30px 0;
   font-weight: bold;
 }
 
