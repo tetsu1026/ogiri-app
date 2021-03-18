@@ -79,8 +79,7 @@ a {
 
 .hello {
   font-weight: bold;
-  margin-top: 45px;
-  margin-left: 250px;
+  margin: 45px 0 0 250px;
   color:  #FFFF66;
 }
 
