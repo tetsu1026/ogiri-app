@@ -166,7 +166,6 @@ password:aaa111
 | nickname             | string     | null: false              |
 | profile              | string     | null: false              |
 
-
 ### Association
 - has_many :posts
 - has_many :comments
