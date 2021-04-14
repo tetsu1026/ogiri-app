@@ -101,6 +101,7 @@ a {
   border-radius: 3px;
   transition: 0.4s ease;
 }
+
 .nav__btn:hover{
   color: #FFFF66 solid;
   background:#770000;
