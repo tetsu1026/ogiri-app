@@ -400,6 +400,7 @@ a {
 }
 
 /* 詳細ページ */
+
 .show_main {
   background-image: url("show_main.png");
   background-size: cover;
