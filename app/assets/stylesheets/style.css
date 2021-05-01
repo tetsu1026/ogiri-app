@@ -846,6 +846,7 @@ a {
 }
 
  /* スマホ表示 */
+ 
 @media (max-width: 599px) {
   .logo {
     width: 120px;
